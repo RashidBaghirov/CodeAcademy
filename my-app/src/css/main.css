@@ -1,0 +1,218 @@
+.header {
+  background-color: #fff;
+  padding: 0 50px;
+}
+.header .container-fluid .row .address p {
+  text-align: left;
+  color: #323232;
+  font-family: visby cf, Sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.5em;
+}
+.header .container-fluid .row .social-icons a {
+  text-decoration: none;
+}
+.header .container-fluid .row .social-icons a i {
+  color: black;
+  font-size: 21px;
+}
+.header .container-fluid .row .request_button_wrapper {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.header .container-fluid .row .request_button_wrapper .request {
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+  line-height: 1;
+  background-color: #818a91;
+  font-size: 15px;
+  padding: 20px 40px;
+  border-radius: 3px;
+  color: black;
+  text-align: center;
+  background-color: #f9dd00;
+  border-radius: 0 0 0 0;
+}
+.header .container-fluid .row .request_button_wrapper .request .request_button {
+  display: flex;
+  justify-content: center;
+}
+.header .container-fluid .row .searching a {
+  text-decoration: none;
+  color: black;
+}
+.header .container-fluid .row .searching a i {
+  font-size: 21px;
+}
+
+.custom-slider {
+  padding: 0;
+  overflow: hidden;
+}
+.custom-slider .slick-slider {
+  padding: 0;
+}
+
+.container-fluid {
+  position: relative;
+}
+.container-fluid .slider-wrapper {
+  position: relative;
+}
+.container-fluid .slider-wrapper .navbar {
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 1;
+  text-align: center;
+}
+.container-fluid .slider-wrapper .navbar nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+.container-fluid .slider-wrapper .navbar nav ul li {
+  margin-right: 20px;
+}
+.container-fluid .slider-wrapper .navbar nav ul li:last-child {
+  margin-right: 0;
+}
+.container-fluid .slider-wrapper .navbar nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.container-fluid .slider-wrapper .navbar nav ul li a:hover {
+  color: white;
+}
+.container-fluid .slider-wrapper .navbar nav ul li a:hover::after {
+  height: 2px;
+  width: 100%;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  background-color: yellow;
+  transition: 0.3s all;
+}
+.container-fluid .slider-wrapper .navbar nav ul li .dropdown-menu {
+  position: absolute;
+  top: 97%;
+  left: 0;
+  background-color: white;
+  padding: 10px;
+  display: none;
+  transition: 0.3s all;
+}
+.container-fluid .slider-wrapper .navbar nav ul li .dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  display: block;
+}
+.container-fluid .slider-wrapper .navbar nav ul li .dropdown-menu ul li {
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.container-fluid .slider-wrapper .navbar nav ul li .dropdown-menu ul li a {
+  color: black;
+}
+.container-fluid .slider-wrapper .navbar nav ul li:hover .dropdown-menu {
+  display: block;
+}
+.container-fluid .slider-wrapper .logo {
+  position: absolute;
+  top: 1%;
+  left: 2%;
+  z-index: 1;
+  text-align: center;
+}
+
+#educations {
+  position: relative;
+  padding: 50px;
+}
+#educations .titles .first h2 {
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: lowercase;
+  letter-spacing: -1.2px;
+  line-height: 24px;
+  text-align: start;
+}
+#educations .titles .second h2 {
+  font-size: 38px;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  text-align: start;
+}
+#educations .border_edu {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#educations .border_edu .line {
+  height: 4px;
+  width: 125px;
+  background-image: url(https://code.edu.az/wp-content/uploads/2021/07/sep-line.png);
+}
+#educations .text {
+  margin-top: 20px;
+  text-align: left;
+  color: gray;
+}
+#educations .edu_category {
+  margin-left: -1px;
+  margin-top: -1px;
+  border: 1px solid #d3d3d5;
+  padding: 25px;
+}
+#educations .edu_category .edu_title {
+  margin-top: 20px;
+}
+
+#why {
+  padding: 50px;
+}
+#why .titles {
+  text-align: start;
+}
+#why .titles .first h2 {
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: lowercase;
+  letter-spacing: -1.2px;
+  line-height: 24px;
+}
+#why .titles .second h2 {
+  font-size: 38px;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+}
+#why .border_edu {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#why .border_edu .line {
+  height: 4px;
+  width: 125px;
+  background-image: url(https://code.edu.az/wp-content/uploads/2021/07/sep-line.png);
+}
+#why .text {
+  margin-top: 20px;
+  text-align: left;
+  color: gray;
+}
+
+body {
+  overflow-x: hidden;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,91 @@
+#educations{
+    position: relative;
+    padding: 50px;
+    .titles{
+        .first{
+           h2{
+            font-size: 50px;
+            font-weight: 800;
+            text-transform: lowercase;
+            letter-spacing: -1.2px;
+            line-height: 24px;
+            text-align: start;
+    
+           }
+        }
+        .second{
+            h2{
+                font-size: 38px;
+                font-weight: 300;
+                letter-spacing: -.1px;
+            text-align: start;
+
+            }
+        }
+       
+    }
+    .border_edu{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .line{
+            height: 4px;
+            width: 125px;
+  background-image: url(https://code.edu.az/wp-content/uploads/2021/07/sep-line.png);
+        }
+    }
+    .text{
+        margin-top: 20px;
+        text-align: left;
+        color:gray;
+     }
+    .edu_category{
+        margin-left: -1px;
+        margin-top: -1px;
+        border: 1px solid #d3d3d5;
+        padding: 25px;
+        .edu_title{
+            margin-top: 20px;
+        }
+    }
+}
+
+#why{
+    padding: 50px;
+    .titles{
+        text-align: start;
+        .first{
+           h2{
+            font-size: 50px;
+            font-weight: 800;
+            text-transform: lowercase;
+            letter-spacing: -1.2px;
+            line-height: 24px;
+    
+           }
+        }
+        .second{
+            h2{
+                font-size: 38px;
+                font-weight: 300;
+                letter-spacing: -.1px;
+            }
+        }
+       
+    }
+    .border_edu{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .line{
+            height: 4px;
+            width: 125px;
+  background-image: url(https://code.edu.az/wp-content/uploads/2021/07/sep-line.png);
+        }
+    }
+    .text{
+       margin-top: 20px;
+       text-align: left;
+       color:gray;
+    }
+}

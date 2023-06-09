@@ -1,0 +1,110 @@
+.custom-slider {
+    padding: 0;
+    overflow: hidden;
+
+    .slick-slider {
+        padding: 0;
+    }
+}
+
+
+.container-fluid {
+    position: relative;
+
+    .slider-wrapper {
+        position: relative;
+
+
+        .navbar {
+            position: absolute;
+            top: 1%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            z-index: 1;
+            text-align: center;
+
+
+
+            nav {
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    list-style: none;
+                    padding: 0;
+
+                    li {
+                        margin-right: 20px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        a {
+                            position: relative;
+                            text-decoration: none;
+                            color: white;
+                            cursor: pointer;
+                            transition: 0.3s all;
+
+                            &:hover {
+                                color: white;
+
+                                &::after {
+                                    height: 2px;
+                                    width: 100%;
+                                    content: '';
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: -2px;
+                                    background-color: yellow;
+                                    transition: 0.3s all;
+                                }
+                            }
+                        }
+
+                        .dropdown-menu {
+                            position: absolute;
+                            top: 97%;
+                            left: 0;
+                            background-color: white;
+                            padding: 10px;
+                            display: none;
+                            transition: 0.3s all;
+
+                            ul {
+                                list-style: none;
+                                padding: 0;
+                                display: block;
+
+                                li {
+                                    padding: 5px;
+                                    margin-bottom: 10px;
+                                    text-align: center;
+
+                                    a {
+                                        color: black;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            .dropdown-menu {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .logo {
+            position: absolute;
+            top: 1%;
+            left: 2%;
+            z-index: 1;
+            text-align: center;
+        }
+    }
+}
