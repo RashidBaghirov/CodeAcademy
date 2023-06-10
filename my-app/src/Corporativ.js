@@ -10,15 +10,6 @@ import FifthSection from './components/Corporativs/FifthSection/FifthSection';
 import SixthSection from './components/Corporativs/SixthSection/SixthSection';
 import SeventhSection from './components/Corporativs/SeventhSection/SeventhSection';
 
-
-
-
-
-
-
-
-
-
 function Corporativ() {
     return (
       <div className="App">
