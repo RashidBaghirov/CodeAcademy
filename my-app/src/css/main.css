@@ -11,6 +11,9 @@
   font-style: normal;
   line-height: 1.5em;
 }
+.header .container-fluid .row .social-icons {
+  text-align: center;
+}
 .header .container-fluid .row .social-icons a {
   text-decoration: none;
 }
@@ -49,8 +52,11 @@
 }
 
 .footer {
-  border-top: 1px solid black;
-  padding: 0 50px;
+  border-top: 1px solid rgba(219, 219, 219, 0.32);
+  padding: 40px 0px;
+}
+.footer .footer_ul {
+  text-align: justify;
 }
 .footer .footer_ul h4 {
   color: var(--e-global-color-primary);
@@ -63,6 +69,28 @@
 .footer .footer_ul ul {
   list-style: none;
   padding: 0;
+}
+.footer .footer_ul ul li a {
+  color: #8f8f8f;
+  fill: #8f8f8f;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.footer .address_code {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 30px 0;
+  background-color: #f4f5f8;
+  text-align: center;
+}
+.footer .footer_foot p {
+  color: gray;
+  font-size: 14px;
+}
+.footer .footer_foot a {
+  text-decoration: none;
+  color: black;
 }
 
 .custom-slider {
@@ -471,6 +499,142 @@
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.allhead {
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  position: relative;
+}
+.allhead .navbar {
+  position: relative;
+  left: 25%;
+  transform: translate(0%, 0%);
+  z-index: 1;
+  text-align: center;
+}
+.allhead .navbar nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+.allhead .navbar nav ul li {
+  margin-right: 20px;
+}
+.allhead .navbar nav ul li:last-child {
+  margin-right: 0;
+}
+.allhead .navbar nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.allhead .navbar nav ul li a:hover {
+  color: gray;
+}
+.allhead .navbar nav ul li a:hover::after {
+  height: 2px;
+  width: 100%;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  background-color: yellow;
+  transition: 0.3s all;
+}
+.allhead .navbar nav ul li .dropdown-menu {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  background-color: white;
+  padding: 10px;
+  display: none;
+  transition: 0.3s all;
+}
+.allhead .navbar nav ul li .dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  display: block;
+}
+.allhead .navbar nav ul li .dropdown-menu ul li {
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.allhead .navbar nav ul li .dropdown-menu ul li a {
+  color: black;
+}
+.allhead .navbar nav ul li:hover .dropdown-menu {
+  display: block;
+}
+.allhead .logo {
+  position: absolute;
+  top: 15%;
+  left: 6%;
+  transform: translate(-6%, -6%);
+  width: 125px;
+  z-index: 1;
+  text-align: center;
+}
+.allhead .logo a img {
+  width: 100%;
+}
+
+#allPart .titles .first {
+  display: flex;
+  justify-content: center;
+}
+#allPart .titles .first h2 {
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: lowercase;
+  letter-spacing: -1.2px;
+  line-height: 24px;
+  text-align: start;
+}
+#allPart .titles .second {
+  display: flex;
+  justify-content: center;
+}
+#allPart .titles .second h2 pre {
+  font-size: 38px;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  text-align: start;
+}
+#allPart .border_edu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#allPart .border_edu .line {
+  height: 4px;
+  width: 75px;
+  background-image: url(https://code.edu.az/wp-content/uploads/2021/07/sep-line.png);
+}
+#allPart .partnyor_ifo {
+  margin-top: 80px;
+}
+#allPart .partnyor_ifo .image {
+  width: 250px;
+}
+#allPart .partnyor_ifo .image img {
+  width: 100%;
+}
+#allPart .partnyor_ifo .partnyor_ifo__text {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+#allPart .partnyor_ifo .partnyor_ifo__text .elementor-post__title {
+  font-size: 20px;
+}
+#allPart .partnyor_ifo .partnyor_ifo__text .partnyor_ifo__excerpt p {
+  color: gray;
+  font-size: 15px;
 }
 
 body {

@@ -23,7 +23,7 @@ const StudentsCM = () => {
             </div>
           </div>
           <Slider {...settings}>
-            <div>
+            <div className="m-4">
               <div class="studentsCM-students-text">
                 İlk dəfə Code Academy-ə gəldiyimdə, mühiti, əməkdaşları, <br />
                 müəllimlərini gördüm və qərara gəldim ki, burda oxumaq
@@ -42,7 +42,7 @@ const StudentsCM = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="m-4">
               <div class="studentsCM-students-text">
                 Code Academy-nin ən güclü tərəflərindən biri təbii ki, müəllim
                 heyətidir. Müvafiq sahələri tədris eden şəxslər hal-hazırda öz
@@ -62,7 +62,7 @@ const StudentsCM = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="m-4">
               <div class="studentsCM-students-text">
                 Code Academy bizə yalnız proqramlaşdırma öyrətmədi, həm də böyük
                 bir həyat dərsi verdi. Risk etməkdən və xəyallarınızı izləməkdən

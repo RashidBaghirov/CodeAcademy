@@ -1,69 +1,16 @@
-import React, { useEffect, useRef, useState } from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import React from "react";
+import "./_AllHeader.scss";
 import { Link } from 'react-router-dom';
 
-const MySlider = () => {
-  const sliderRef = useRef(null);
-  const [activeMenu, setActiveMenu] = useState(null);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (sliderRef.current) {
-        sliderRef.current.slickNext();
-      }
-    }, 3000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
-
-  const handleMenuToggle = (menuName) => {
-    setActiveMenu(menuName === activeMenu ? null : menuName);
-  };
-
-  return (
-    <div className='container-fluid'>
-      <div className="slider-wrapper">
-        <Slider {...settings} ref={sliderRef}>
-          <div>
-            <img className='w-100' src="/images/slider1.png" alt="Slide 1" />
-          </div>
-          <div>
-            <img className='w-100' src="/images/slider2.png" alt="Slide 2" />
-          </div>
-          <div>
-            <img className='w-100' src="/images/slider3.png" alt="Slide 3" />
-          </div>
-          <div>
-            <img className='w-100' src="/images/slider4.png" alt="Slide 4" />
-          </div>
-        </Slider>
-        <div className="navbar">
+function AllHeader() {
+    const [activeMenu, setActiveMenu] = React.useState(null);
+    const handleMenuToggle = (menuName) => {
+        setActiveMenu(menuName === activeMenu ? null : menuName);
+      };
+    
+    return (
+        <header className="allhead">
+                  <div className="navbar">
           <div className='container'>
             <nav>
               <ul>
@@ -80,8 +27,7 @@ const MySlider = () => {
                           </li>
                           <li>
                             <a>
-                              <Link to="/akademi">
-                              Akademik Partnyorlar</Link>
+                            Akademik Partnyorlar
                             </a>
                           </li>
                           <li>
@@ -150,11 +96,12 @@ const MySlider = () => {
           </div>
         </div>
         <div className='logo'>
-            <img  src='/images/download.svg'/>
+           <Link to="/">
+           <img  src='/images/logofoot.png'/>
+           </Link>
         </div>
-      </div>
-    </div>
-  );
-};
-
-export default MySlider;
+        </header>
+        );
+    }
+    
+    export default AllHeader;
