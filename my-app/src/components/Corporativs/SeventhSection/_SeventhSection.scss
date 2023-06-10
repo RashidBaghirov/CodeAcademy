@@ -1,0 +1,90 @@
+#Contact{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #F7F7F7;
+    .textsContact{
+        .title{
+            .upper{
+                width: 313px;   
+                margin: 0;
+                    color: #4A4A4A;;
+                    font-family: "Visby CF", Sans-serif;
+                    font-size: 50px;
+                    font-weight: 800;
+                    text-transform: lowercase;
+                    line-height: 70px;
+                    letter-spacing: -1.2px;
+                
+             }
+            .bottom{
+                font-family: "Visby CF", Sans-serif;
+                color: #4A4A4A;;
+            }
+        }
+        .text{
+            margin-top: 20px;
+            color: #929292;
+            line-height: 26px;
+        }
+    }
+    form{
+        input, select{
+            border: none;
+            padding: 20px 7px;
+        }
+        .name{
+            height: 60px;
+            width: 43%;
+        }
+        .surname{
+            height: 60px;
+            margin-left: 14px;
+            width: 43%;
+        }
+        .prefics{
+            height: 60px;
+            margin-top: 10px;
+            height: 60px;
+            width: 22%;
+        }
+        .number{
+            height: 60px;
+            margin-top: 10px;
+            margin-left: 10px;
+            width: 65%;
+        }
+        .email{
+            height: 60px;
+            margin-top: 10px;
+            width: 90%;
+        }
+        .company{
+            height: 60px;
+            margin-top: 10px;
+            width: 90%;
+        }
+        .vezife{
+            margin-top: 10px;
+            height: 60px;
+             width: 90%;
+        }
+        .count{
+            margin-top: 10px;
+            height: 60px;
+            width: 90%;
+
+        }
+        .textArea{
+            border: none;
+            margin-top: 10px;
+        }
+        button{
+            width: 379px;
+             height: 50px;
+             background-color: #ffcd05;
+             border: none;
+             color: #323232;
+             font-weight: 700;
+        }
+    }
+}

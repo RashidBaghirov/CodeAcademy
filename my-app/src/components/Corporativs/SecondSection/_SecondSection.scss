@@ -1,0 +1,52 @@
+#about{
+    padding-top: 100px;
+    .image{
+        width: 93%;
+        img{
+            width: 100%;
+        }
+    }
+
+    .title-text{
+        .title{
+            h2{
+                font-family: "Visby CF", Sans-serif;
+                color: #333;
+                font-size: 50px;
+                font-weight: 700;
+                text-transform: lowercase;
+                line-height: 60px;
+                letter-spacing: -1.2px;
+            }
+        }
+        .subTitle{
+            h2{
+                font-family: "Visby CF", Sans-serif;
+                font-size: 50px;
+                font-weight: 300;
+                text-transform: lowercase;
+                line-height: 60px;
+                letter-spacing: -1.5px;
+            }
+        }
+        .texts{
+            .firstText{
+                margin-top: 20px;
+                p{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    font-family: visby cf,Sans-serif!important;
+                }
+            }
+            .secondText{
+                p{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    font-family: visby cf,Sans-serif!important;
+                }
+            }
+        }
+    }
+}

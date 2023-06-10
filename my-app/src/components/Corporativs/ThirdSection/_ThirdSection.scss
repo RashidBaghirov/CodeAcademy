@@ -1,0 +1,72 @@
+#aboutKorporativ{
+    padding-top: 100px;
+    .title{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .first{
+            font-family: "Visby CF", Sans-serif;
+            font-size: 50px;
+            font-weight: 300;
+            text-transform: lowercase;
+            line-height: 60px;
+            letter-spacing: -1.5px;
+        }
+        .second{
+            margin-left: 15px;
+            font-family: "Visby CF", Sans-serif;
+            color: #333;
+            font-size: 50px;
+            font-weight: 700;
+            text-transform: lowercase;
+            line-height: 60px;
+            letter-spacing: -1.2px;
+        }
+    }
+    .titleTextKar{
+        padding-top: 10px;
+        text-align: center;
+        p{
+            color: #929292;
+            font-size: 15px;
+            width: 605px;
+            margin: 0 auto;
+        }
+    }
+
+    .mainContentKorp{
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        ul{
+            width: 280px;
+            padding: 0;
+            li{
+                margin-right: 20px;
+                list-style: none;
+                .imageAb{
+                    img{
+                        width: 76px;
+                        height: 58px;
+                        object-fit: contain;
+                    }
+                }
+                .titleMain{
+                    h2{
+                        color: #4a4a4a;
+                        font-family: "Visby CF", Sans-serif;
+                        font-size: 18px;
+                        font-weight: 600;
+                        font-style: normal;
+                        line-height: 28.98px
+                    }
+                }
+                .textMain{
+                    p{
+                        color:#929292 ;
+                    }
+                }
+            }
+        }
+    }
+}

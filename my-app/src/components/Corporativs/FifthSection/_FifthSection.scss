@@ -1,0 +1,44 @@
+#reviews{
+    padding: 60px;
+    background-color: #ffcd05;
+    .firstCart, .secondCart{
+        position: relative;
+        .cartText{
+            height: 274px;
+            text-align: center;
+            padding: 40px;
+            background-color: white;
+            .titleCart{
+                margin-bottom: 10px;
+            }
+            .textCart{
+                color: #929292;
+            }
+        }
+        .emptyDiv{
+            right: 50%;
+            bottom: 93px;
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: white;
+            transform: rotateZ(45deg);
+        }
+        .person{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .image{
+                img{
+                    border-radius: 50px;
+                    width: 70px;
+                }
+            }
+            .name-work{
+                
+                margin-left: 15px;
+            }
+        }
+    }
+}

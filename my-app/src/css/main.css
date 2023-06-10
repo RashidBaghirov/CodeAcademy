@@ -637,6 +637,383 @@
   font-size: 15px;
 }
 
+section {
+  position: relative;
+}
+section .mainContent {
+  background-image: url(https://code.edu.az/wp-content/uploads/2022/04/kor-scaled.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 590px;
+  padding: 50px;
+}
+section .mainContent .title {
+  margin-top: 40px;
+}
+section .mainContent .title h1 {
+  color: white;
+  font-size: 58px;
+  font-weight: 400;
+  font-family: "Visby CF", Sans-serif;
+}
+section .mainContent .text {
+  margin-top: 25px;
+  width: 575px;
+}
+section .mainContent .text p {
+  font-family: "Visby CF", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: white;
+}
+section .mainContent .navigation {
+  margin-top: 18px;
+}
+section .mainContent .navigation a {
+  font-family: "Visby CF", Sans-serif;
+  padding-top: 17px;
+  background-color: #FFCD05;
+  display: inline-block;
+  text-decoration: none;
+  color: #323232;
+  text-align: center;
+  width: 195px;
+  height: 60px;
+}
+section .mainContent .download {
+  font-family: "Visby CF", Sans-serif;
+  margin-top: 55px;
+  margin-left: 15px;
+  color: white;
+}
+section .navbarBottom {
+  height: 70px;
+  width: 100%;
+  background-color: #4A4A4A;
+}
+section .navbarBottom ul {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .navbarBottom ul li {
+  margin-left: 30px;
+  list-style: none;
+}
+section .navbarBottom ul li a {
+  font-family: "Visby CF", Sans-serif;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+section .navbarBottom ul li a:hover {
+  color: #FFCD05;
+}
+
+#about {
+  padding-top: 100px;
+}
+#about .image {
+  width: 93%;
+}
+#about .image img {
+  width: 100%;
+}
+#about .title-text .title h2 {
+  font-family: "Visby CF", Sans-serif;
+  color: #333;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: lowercase;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+}
+#about .title-text .subTitle h2 {
+  font-family: "Visby CF", Sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: lowercase;
+  line-height: 60px;
+  letter-spacing: -1.5px;
+}
+#about .title-text .texts .firstText {
+  margin-top: 20px;
+}
+#about .title-text .texts .firstText p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: visby cf, Sans-serif !important;
+}
+#about .title-text .texts .secondText p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: visby cf, Sans-serif !important;
+}
+
+#aboutKorporativ {
+  padding-top: 100px;
+}
+#aboutKorporativ .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#aboutKorporativ .title .first {
+  font-family: "Visby CF", Sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: lowercase;
+  line-height: 60px;
+  letter-spacing: -1.5px;
+}
+#aboutKorporativ .title .second {
+  margin-left: 15px;
+  font-family: "Visby CF", Sans-serif;
+  color: #333;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: lowercase;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+}
+#aboutKorporativ .titleTextKar {
+  padding-top: 10px;
+  text-align: center;
+}
+#aboutKorporativ .titleTextKar p {
+  color: #929292;
+  font-size: 15px;
+  width: 605px;
+  margin: 0 auto;
+}
+#aboutKorporativ .mainContentKorp {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+#aboutKorporativ .mainContentKorp ul {
+  width: 280px;
+  padding: 0;
+}
+#aboutKorporativ .mainContentKorp ul li {
+  margin-right: 20px;
+  list-style: none;
+}
+#aboutKorporativ .mainContentKorp ul li .imageAb img {
+  width: 76px;
+  height: 58px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#aboutKorporativ .mainContentKorp ul li .titleMain h2 {
+  color: #4a4a4a;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 28.98px;
+}
+#aboutKorporativ .mainContentKorp ul li .textMain p {
+  color: #929292;
+}
+
+#solwing {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#solwing .title {
+  display: flex;
+}
+#solwing .title .left {
+  color: #4a4a4a;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: lowercase;
+  line-height: 60px;
+  letter-spacing: -1.5px;
+}
+#solwing .title .right {
+  margin-left: 15px;
+  color: #4a4a4a;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: lowercase;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+}
+#solwing .rightSide .image img {
+  width: 100%;
+  height: 304px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#reviews {
+  padding: 60px;
+  background-color: #ffcd05;
+}
+#reviews .firstCart, #reviews .secondCart {
+  position: relative;
+}
+#reviews .firstCart .cartText, #reviews .secondCart .cartText {
+  height: 274px;
+  text-align: center;
+  padding: 40px;
+  background-color: white;
+}
+#reviews .firstCart .cartText .titleCart, #reviews .secondCart .cartText .titleCart {
+  margin-bottom: 10px;
+}
+#reviews .firstCart .cartText .textCart, #reviews .secondCart .cartText .textCart {
+  color: #929292;
+}
+#reviews .firstCart .emptyDiv, #reviews .secondCart .emptyDiv {
+  right: 50%;
+  bottom: 93px;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  transform: rotateZ(45deg);
+}
+#reviews .firstCart .person, #reviews .secondCart .person {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#reviews .firstCart .person .image img, #reviews .secondCart .person .image img {
+  border-radius: 50px;
+  width: 70px;
+}
+#reviews .firstCart .person .name-work, #reviews .secondCart .person .name-work {
+  margin-left: 15px;
+}
+
+#logos {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#logos .titleLogos {
+  text-align: center;
+}
+#logos .titleLogos .upper {
+  color: #4A4A4A;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 60px;
+  font-weight: 100;
+  text-transform: lowercase;
+  line-height: 70px;
+  letter-spacing: -1.2px;
+}
+#logos .titleLogos .bottom {
+  color: #4A4A4A;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: lowercase;
+  line-height: 70px;
+  letter-spacing: -1.2px;
+}
+#logos .images {
+  padding-top: 30px;
+}
+#logos .images img {
+  width: 110px;
+  height: 95px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#Contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #F7F7F7;
+}
+#Contact .textsContact .title .upper {
+  width: 313px;
+  margin: 0;
+  color: #4A4A4A;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: lowercase;
+  line-height: 70px;
+  letter-spacing: -1.2px;
+}
+#Contact .textsContact .title .bottom {
+  font-family: "Visby CF", Sans-serif;
+  color: #4A4A4A;
+}
+#Contact .textsContact .text {
+  margin-top: 20px;
+  color: #929292;
+  line-height: 26px;
+}
+#Contact form input, #Contact form select {
+  border: none;
+  padding: 20px 7px;
+}
+#Contact form .name {
+  height: 60px;
+  width: 43%;
+}
+#Contact form .surname {
+  height: 60px;
+  margin-left: 14px;
+  width: 43%;
+}
+#Contact form .prefics {
+  height: 60px;
+  margin-top: 10px;
+  height: 60px;
+  width: 22%;
+}
+#Contact form .number {
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 65%;
+}
+#Contact form .email {
+  height: 60px;
+  margin-top: 10px;
+  width: 90%;
+}
+#Contact form .company {
+  height: 60px;
+  margin-top: 10px;
+  width: 90%;
+}
+#Contact form .vezife {
+  margin-top: 10px;
+  height: 60px;
+  width: 90%;
+}
+#Contact form .count {
+  margin-top: 10px;
+  height: 60px;
+  width: 90%;
+}
+#Contact form .textArea {
+  border: none;
+  margin-top: 10px;
+}
+#Contact form button {
+  width: 379px;
+  height: 50px;
+  background-color: #ffcd05;
+  border: none;
+  color: #323232;
+  font-weight: 700;
+}
+
 body {
   overflow-x: hidden;
 }/*# sourceMappingURL=main.css.map */

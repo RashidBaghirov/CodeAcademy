@@ -136,9 +136,14 @@ const MySlider = () => {
                   </a>
                 </li>
                 <li>
-                  <a >
+                       <a >
+                  <Link to="/corporativ">
+
                     Korporativ
+                    </Link>
                   </a>
+              
+             
                 </li>
                 <li>
                   <a >

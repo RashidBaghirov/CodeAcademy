@@ -26,8 +26,9 @@ function AllHeader() {
                             </a>
                           </li>
                           <li>
-                            <a>
-                            Akademik Partnyorlar
+                          <a>
+                              <Link to="/akademi">
+                              Akademik Partnyorlar</Link>
                             </a>
                           </li>
                           <li>
@@ -82,8 +83,11 @@ function AllHeader() {
                   </a>
                 </li>
                 <li>
-                  <a >
+                <a >
+                  <Link to="/corporativ">
+
                     Korporativ
+                    </Link>
                   </a>
                 </li>
                 <li>
