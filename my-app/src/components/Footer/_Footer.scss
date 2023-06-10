@@ -1,0 +1,19 @@
+.footer{
+    border-top: 1px solid black;
+    padding: 0 50px;
+    .footer_ul{
+       h4{
+        color: var(--e-global-color-primary );
+    font-family: visby cf,Sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.33em;
+       }
+       ul{
+        list-style: none;
+        padding: 0;
+       }
+    }
+
+}

@@ -44,8 +44,13 @@
         margin-top: -1px;
         border: 1px solid #d3d3d5;
         padding: 25px;
+        transition: transform 0.3s ease-in-out;
+        background-color: #fff;
         .edu_title{
             margin-top: 20px;
+        }
+        &:hover{
+            transform: scale(1.1);
         }
     }
 }
@@ -87,5 +92,51 @@
        margin-top: 20px;
        text-align: left;
        color:gray;
+    }
+    .projects{
+        .project_image{
+            width: 515px;
+            img{
+                width: 100%;
+            }
+        }
+        .base_projects_titles{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .projects_titles{
+                margin-left: 40px;
+                .projects_titles_h3{
+                display: flex;
+    
+                    h3{
+                        font-size: 21px;
+                        font-weight: 800;
+                        cursor: pointer;
+                    }
+                }
+                .texts{
+                    text-align: start;
+                    p{
+                        font-size: 14px;
+                    }
+                }
+                .href{
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    a{
+                        font-family:Sans-serif;
+                        font-size: 14px;
+                        font-weight: 800;
+                        font-style: normal;
+                        line-height: 1.33em;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+      
     }
 }

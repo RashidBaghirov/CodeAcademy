@@ -1,0 +1,57 @@
+#portnyor{
+    padding: 50px;
+    .titles{
+        .first{
+            display: flex;
+            justify-content: center;
+           h2{
+            font-size: 50px;
+            font-weight: 800;
+            text-transform: lowercase;
+            letter-spacing: -1.2px;
+            line-height: 24px;
+            text-align: start;
+    
+           }
+        }
+        .second{
+            display: flex;
+            justify-content: center;
+            h2{
+                font-size: 38px;
+                font-weight: 300;
+                letter-spacing: -.1px;
+            text-align: start;
+
+            }
+        }
+       
+    }
+    .border_edu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .line{
+            height: 4px;
+            width: 125px;
+  background-image: url(https://code.edu.az/wp-content/uploads/2021/07/sep-line.png);
+        }
+    }
+
+    .portnyor{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        .portnyor_image{
+            display: flex;
+            width: 120px;
+            height: 120px;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}

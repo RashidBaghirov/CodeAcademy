@@ -48,6 +48,23 @@
   font-size: 21px;
 }
 
+.footer {
+  border-top: 1px solid black;
+  padding: 0 50px;
+}
+.footer .footer_ul h4 {
+  color: var(--e-global-color-primary);
+  font-family: visby cf, Sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.33em;
+}
+.footer .footer_ul ul {
+  list-style: none;
+  padding: 0;
+}
+
 .custom-slider {
   padding: 0;
   overflow: hidden;
@@ -174,9 +191,14 @@
   margin-top: -1px;
   border: 1px solid #d3d3d5;
   padding: 25px;
+  transition: transform 0.3s ease-in-out;
+  background-color: #fff;
 }
 #educations .edu_category .edu_title {
   margin-top: 20px;
+}
+#educations .edu_category:hover {
+  transform: scale(1.1);
 }
 
 #why {
@@ -211,6 +233,244 @@
   margin-top: 20px;
   text-align: left;
   color: gray;
+}
+#why .projects .project_image {
+  width: 515px;
+}
+#why .projects .project_image img {
+  width: 100%;
+}
+#why .projects .base_projects_titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#why .projects .base_projects_titles .projects_titles {
+  margin-left: 40px;
+}
+#why .projects .base_projects_titles .projects_titles .projects_titles_h3 {
+  display: flex;
+}
+#why .projects .base_projects_titles .projects_titles .projects_titles_h3 h3 {
+  font-size: 21px;
+  font-weight: 800;
+  cursor: pointer;
+}
+#why .projects .base_projects_titles .projects_titles .texts {
+  text-align: start;
+}
+#why .projects .base_projects_titles .projects_titles .texts p {
+  font-size: 14px;
+}
+#why .projects .base_projects_titles .projects_titles .href {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#why .projects .base_projects_titles .projects_titles .href a {
+  font-family: Sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1.33em;
+  cursor: pointer;
+}
+
+#clipboard {
+  position: relative;
+}
+#clipboard .clipboard_background {
+  background-image: url(https://2022.code.edu.az/wp-content/uploads/2021/09/code-academy-bg.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clipboard .clipboard_background .clipboard_text .clipboard_text_h2 {
+  color: white;
+  z-index: 5;
+}
+#clipboard .clipboard_background .clipboard_text .counts {
+  display: flex;
+  justify-content: space-around;
+  z-index: 5;
+}
+#clipboard .clipboard_background .clipboard_text .counts span {
+  color: white;
+  font-size: 70px;
+  font-weight: 800;
+  text-transform: lowercase;
+  line-height: 70px;
+  letter-spacing: -1.2px;
+}
+#clipboard .clipboard_background .clipboard_text .counts p {
+  color: white;
+  font-size: 35px;
+  font-weight: 300;
+  text-transform: lowercase;
+  line-height: 0.8em;
+  letter-spacing: -1.5px;
+}
+#clipboard .background-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+#studentsCM {
+  margin-top: 50px;
+}
+#studentsCM .titles h2 {
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: lowercase;
+  line-height: 1.5px;
+  letter-spacing: 0.5px;
+}
+#studentsCM .slick-slider {
+  margin-top: 20px;
+}
+#studentsCM .slick-slider .studentsCM-students-text {
+  font-size: 1.3em;
+  font-style: italic;
+  line-height: 1.5;
+}
+#studentsCM .slick-slider .stu_name_and_img {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#studentsCM .slick-slider .stu_name_and_img .image {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+#studentsCM .slick-slider .stu_name_and_img .image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+}
+#studentsCM .slick-slider .stu_name_and_img .name_and_profession .name {
+  font-weight: 900;
+  display: block;
+}
+#studentsCM .slick-slider .stu_name_and_img .name_and_profession .profession {
+  font-family: initial;
+  color: gray;
+}
+
+#portnyor {
+  padding: 50px;
+}
+#portnyor .titles .first {
+  display: flex;
+  justify-content: center;
+}
+#portnyor .titles .first h2 {
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: lowercase;
+  letter-spacing: -1.2px;
+  line-height: 24px;
+  text-align: start;
+}
+#portnyor .titles .second {
+  display: flex;
+  justify-content: center;
+}
+#portnyor .titles .second h2 {
+  font-size: 38px;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  text-align: start;
+}
+#portnyor .border_edu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#portnyor .border_edu .line {
+  height: 4px;
+  width: 125px;
+  background-image: url(https://code.edu.az/wp-content/uploads/2021/07/sep-line.png);
+}
+#portnyor .portnyor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#portnyor .portnyor .portnyor_image {
+  display: flex;
+  width: 120px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+}
+#portnyor .portnyor .portnyor_image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#graduate {
+  padding: 50px;
+}
+#graduate .titles .first {
+  display: flex;
+  justify-content: center;
+}
+#graduate .titles .first h2 {
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: lowercase;
+  letter-spacing: -1.2px;
+  line-height: 24px;
+  text-align: start;
+}
+#graduate .titles .second {
+  display: flex;
+  justify-content: center;
+}
+#graduate .titles .second h2 {
+  font-size: 38px;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  text-align: start;
+}
+#graduate .border_edu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#graduate .border_edu .line {
+  height: 4px;
+  width: 125px;
+  border-bottom: 2px solid yellow;
+}
+#graduate .graduates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#graduate .graduates .graduates_image {
+  width: 172px;
+  height: 174px;
+}
+#graduate .graduates .graduates_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 body {

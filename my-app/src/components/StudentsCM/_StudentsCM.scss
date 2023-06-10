@@ -1,0 +1,48 @@
+#studentsCM {
+    margin-top: 50px;
+    .titles {
+        h2 {
+            font-size: 50px;
+            font-weight: 300;
+            text-transform: lowercase;
+            line-height: 1.5px;
+            letter-spacing: .5px;
+        }
+    }
+    .slick-slider{
+        margin-top: 20px;
+        .studentsCM-students-text{
+            font-size: 1.3em;
+    font-style: italic;
+    line-height: 1.5;
+        }
+        .stu_name_and_img{
+            margin-top: 20px;
+            display: flex;
+    justify-content: center;
+    align-items: center;
+            .image{
+                width: 100px;
+                height: 100px;
+                margin-right: 20px;
+                img{
+                    width: 100%;
+                    object-fit: contain;
+                border-radius: 50%;
+
+                }
+            }
+            .name_and_profession{
+                .name{
+                    font-weight: 900;
+                    display: block;
+                }
+                .profession{
+                    font-family: initial;
+                    color: gray;
+                }
+
+            }
+        }
+    }
+}

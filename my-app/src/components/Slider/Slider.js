@@ -21,7 +21,7 @@ const MySlider = () => {
 
   const settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -50,13 +50,16 @@ const MySlider = () => {
       <div className="slider-wrapper">
         <Slider {...settings} ref={sliderRef}>
           <div>
-            <img className='w-100' src="/images/code-academy-bg.jpeg" alt="Slide 1" />
+            <img className='w-100' src="/images/slider1.png" alt="Slide 1" />
           </div>
           <div>
-            <img className='w-100' src="/images/code-academy-bg.jpeg" alt="Slide 2" />
+            <img className='w-100' src="/images/slider2.png" alt="Slide 2" />
           </div>
           <div>
-            <img className='w-100' src="/images/code-academy-bg.jpeg" alt="Slide 3" />
+            <img className='w-100' src="/images/slider3.png" alt="Slide 3" />
+          </div>
+          <div>
+            <img className='w-100' src="/images/slider4.png" alt="Slide 4" />
           </div>
         </Slider>
         <div className="navbar">
