@@ -18,13 +18,13 @@ const StudentsCM = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className="titles">
+            <div className="titles d-flex justify-content-center">
               <h2>məzunlarımızın rəyləri</h2>
             </div>
           </div>
           <Slider {...settings}>
             <div className="m-4">
-              <div class="studentsCM-students-text">
+              <div class="studentsCM-students-text d-flex justify-content-center">
                 İlk dəfə Code Academy-ə gəldiyimdə, mühiti, əməkdaşları, <br />
                 müəllimlərini gördüm və qərara gəldim ki, burda oxumaq
                 istəyirəm.

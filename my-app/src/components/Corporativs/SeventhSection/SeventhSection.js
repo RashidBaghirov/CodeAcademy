@@ -56,7 +56,7 @@ function SeventhSection() {
 
                    </select><br />
 
-                   <textarea className="textArea" name="" id="" cols="42" rows="4"></textarea>
+                   <textarea className="textArea" name="" id="" cols="48" rows="4"></textarea>
 
                    <button type="submit">
                     Müraciət edin
