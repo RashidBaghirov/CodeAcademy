@@ -25,6 +25,17 @@ function ContactFirstSection() {
                   məlumatlar vasitəsilə bizimlə əlaqə saxlaya bilərsən.
                 </p>
               </div>
+              <div className="text">
+                <h4>Ümumi məlumat üçün bizə müraciət et:</h4>
+                <p className="address">
+                  Nizami küç. 203B, 
+                </p>
+                <p className="address">AF Business House,</p>
+                <p className="address">
+                2-ci mərtəbə +99412 310
+                  0113/ +99450 444 2633 info@code.edu.az
+                </p>
+              </div>
             </div>
           </div>
           <div className="col-lg-6 ">

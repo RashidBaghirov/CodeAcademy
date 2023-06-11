@@ -16,7 +16,7 @@ function Footer() {
                 </li>
                 <li>
                   
-                  <Link to="/akademi"><a>Akademik Partnyorlar</a></Link>
+                  <Link style={{textDecoration:"none"}} to="/akademi"><a>Akademik Partnyorlar</a></Link>
                 </li>
                 <li>
                   <a>Aktiv Vakansiyallar</a>

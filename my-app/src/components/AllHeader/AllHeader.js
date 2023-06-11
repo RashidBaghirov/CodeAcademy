@@ -27,7 +27,7 @@ function AllHeader() {
                           </li>
                           <li>
                           <a>
-                              <Link to="/akademi">
+                              <Link style={{textDecoration:"none"}} to="/akademi">
                               Akademik Partnyorlar</Link>
                             </a>
                           </li>
@@ -84,18 +84,18 @@ function AllHeader() {
                 </li>
                 <li>
                 <a >
-                  <Link to="/corporativ">
+                  <Link style={{textDecoration:"none"}} to="/corporativ">
 
                     Korporativ
                     </Link>
                   </a>
                 </li>
                 <li>
-                  <a >
-                   <Link to="/contact">
+                 
+                   <Link style={{textDecoration:"none"}} to="/contact">
                    Əlaqə
                    </Link>
-                  </a>
+                
                 </li>
               </ul>
             </nav>

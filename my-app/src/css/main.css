@@ -847,6 +847,32 @@ section .navbarBottom ul li a:hover {
   line-height: 60px;
   letter-spacing: -1.2px;
 }
+#solwing .accordion {
+  border: none;
+  box-shadow: none;
+  background-color: transparent !important;
+}
+#solwing .accordion .accordion-item {
+  border: none;
+}
+#solwing .accordion .accordion-item .accordion-header .accordion-button {
+  font-family: revert;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  color: rgba(50, 50, 50, 0.6196078431);
+  font-size: 24px;
+  background-color: transparent !important;
+  border: none !important;
+}
+#solwing .accordion .accordion-item .accordion-header .accordion-button:focus {
+  border: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+#solwing .accordion .accordion-item p {
+  font-size: 15px;
+}
 #solwing .rightSide .image img {
   width: 100%;
   height: 304px;
@@ -957,12 +983,16 @@ section .navbarBottom ul li a:hover {
   line-height: 26px;
 }
 #Contact form input, #Contact form select {
-  border: none;
+  border-color: transparent !important;
+  border: none !important;
   padding: 20px 7px;
 }
 #Contact form .name {
   height: 60px;
   width: 43%;
+}
+#Contact form .name:focus-visible {
+  border: 1px solid rgb(219, 4, 4) !important;
 }
 #Contact form .surname {
   height: 60px;
@@ -1008,6 +1038,130 @@ section .navbarBottom ul li a:hover {
 #Contact form button {
   width: 379px;
   height: 50px;
+  background-color: #ffcd05;
+  border: none;
+  color: #323232;
+  font-weight: 700;
+}
+
+#first {
+  padding: 50px;
+}
+#first .titles .first {
+  display: flex;
+  justify-content: start;
+}
+#first .titles .first h2 {
+  font-size: 60px;
+  font-weight: 100;
+  text-transform: lowercase;
+  line-height: 50px;
+  text-align: start;
+}
+#first .titles .second {
+  display: flex;
+  justify-content: start;
+}
+#first .titles .second h2 {
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: lowercase;
+  line-height: 50px;
+  text-align: start;
+}
+#first .border_edu {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 21px 0 21px 50px;
+}
+#first .border_edu .line {
+  height: 4px;
+  width: 125px;
+  background-image: url(https://code.edu.az/wp-content/uploads/2021/07/sep-line.png);
+}
+#first .text {
+  margin-top: 50px;
+  width: 75%;
+}
+#first .text h4 {
+  font-size: 14px;
+}
+#first .text .address {
+  font-size: 12px;
+  line-height: 0px;
+}
+
+#second {
+  background-color: #F4F5F8;
+}
+#second .questions {
+  padding: 55px;
+}
+#second .questions .titles h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
+#second .questions .title p {
+  font-size: 14px;
+}
+
+#request .titles {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#request .titles h4 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 70px;
+  color: #494949;
+}
+#request .titles p {
+  font-family: math;
+}
+#request .image {
+  width: 95%;
+}
+#request .image img {
+  width: 100%;
+}
+#request form input,
+#request form select {
+  border: 1px solid #D3D3D5;
+  padding: 20px 7px;
+  margin-bottom: 10px;
+}
+#request form .name {
+  width: 100%;
+}
+#request form .surname {
+  width: 100%;
+}
+#request form .prefics {
+  width: 100%;
+}
+#request form .number {
+  width: 100%;
+}
+#request form .email {
+  width: 100%;
+}
+#request form .company {
+  width: 100%;
+}
+#request form .vezife {
+  width: 100%;
+}
+#request form .count {
+  width: 100%;
+}
+#request form .textArea {
+  border: 1px solid #D3D3D5;
+  width: 100%;
+}
+#request form button {
+  height: 65px;
+  width: 100%;
   background-color: #ffcd05;
   border: none;
   color: #323232;
