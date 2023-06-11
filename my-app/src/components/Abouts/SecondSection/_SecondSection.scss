@@ -1,0 +1,36 @@
+#second {
+    padding-top: 50px;
+    .optional{
+        width: 310px;
+        .image {
+            text-align: center;
+    
+            img {
+                width: 310px;
+                height: 255px;
+                object-fit: contain;
+            }
+        }
+    
+      
+            .date {
+                padding: 10px 10px 0px 10px;
+    
+                span {
+                    color: #323232;
+                    font-weight: 700;
+                    font-size: 22px;
+                }
+            }
+    
+            .text {
+                padding: 10px 10px 10px 10px;
+    
+                p {
+                    color: #9c9c9c;
+                }
+            }
+        
+    }
+
+}

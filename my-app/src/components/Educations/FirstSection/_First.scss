@@ -1,0 +1,36 @@
+#first {
+    padding-top: 40px;
+
+    .title {
+
+        .upper {
+            color: #4a4a4a;
+            font-family: "Visby CF", Sans-serif;
+            font-size: 60px;
+            font-weight: 800;
+            text-transform: lowercase;
+            line-height: 70px;
+            letter-spacing: -1.2px;
+        }
+
+        .bottom {
+            color: #4a4a4a;
+
+            line-height: 3px;
+            font-family: "Visby CF", Sans-serif;
+            font-size: 60px;
+            font-weight: 300;
+            text-transform: lowercase;
+            letter-spacing: -1.5px;
+            margin-left: 43px;
+        }
+    }
+
+    .logo {
+        padding-bottom: 20px;
+    }
+
+    .text {
+        color: #8b8b8b;
+    }
+}

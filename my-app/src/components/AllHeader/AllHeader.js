@@ -21,25 +21,25 @@ function AllHeader() {
                       <div className="dropdown-menu">
                         <ul>
                           <li>
-                            <a>
+                            
+                            <Link  style={{textDecoration:"none"}} to="/about">
                             Haqqımızda
-                            </a>
+                            </Link>
+                            
                           </li>
                           <li>
-                          <a>
                               <Link style={{textDecoration:"none"}} to="/akademi">
                               Akademik Partnyorlar</Link>
-                            </a>
                           </li>
                           <li>
-                            <a>
+                            <Link  style={{textDecoration:"none"}} to="/karyera">
                             Karyera və Talant Mərkəzi
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a>
+                          <Link to="/education">
                             Təhsil Modeli
-                            </a>
+                           </Link>
                           </li>
                           <li>
                             <a>
@@ -83,12 +83,10 @@ function AllHeader() {
                   </a>
                 </li>
                 <li>
-                <a >
                   <Link style={{textDecoration:"none"}} to="/corporativ">
 
                     Korporativ
                     </Link>
-                  </a>
                 </li>
                 <li>
                  

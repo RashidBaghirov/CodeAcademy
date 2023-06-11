@@ -1,0 +1,71 @@
+#four {
+    padding: 40px;
+    .about {
+        padding: 40px 60px;
+        background-color: #F4F5F8;
+
+        .title {
+            .upper {
+                font-family: "Visby CF", Sans-serif;
+                font-size: 50px;
+                font-weight: 300;
+                text-transform: lowercase;
+                line-height: 1.04em;
+                letter-spacing: -1.5px;
+                color: #4a4a4a;
+            }
+
+            .bottom {
+                color: #4a4a4a;
+
+                font-family: "Visby CF", Sans-serif;
+                font-size: 50px;
+                font-weight: 800;
+                text-transform: lowercase;
+                line-height: 1.04em;
+                letter-spacing: -1.5px;
+            }
+        }
+
+        .text {
+            width: 506px;
+
+            p {
+                margin: 40px 0px 0px 0px;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #575757;
+            }
+        }
+
+        ul {
+            margin-top: 30px;
+
+            li {
+                margin-top: 5px;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #575757;
+            }
+        }
+
+        .certificate {
+            a {
+                font-size: 16px;
+                font-weight: 800;
+                font-style: normal;
+                color: black;
+            }
+        }
+    }
+
+    .image {
+        img {
+            width: 550px;
+            height: 526px;
+            object-fit: cover;
+        }
+    }
+}

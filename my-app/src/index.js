@@ -10,6 +10,9 @@ import Corporativ from './Corporativ';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Contact from './Contact';
 import Request from './Request';
+import Karyera from './Karyera';
+import About from './About';
+import EducationModel from './EducationModel';
 
 
 
@@ -22,6 +25,12 @@ root.render(
   <Route path="/corporativ" element={<Corporativ />} />
   <Route path="/contact" element={<Contact />} />
   <Route path="/request" element={<Request />} />
+  <Route path="/karyera" element={<Karyera />} />
+  <Route path="/about" element={<About />} />
+  <Route path="/education" element={<EducationModel />} />
+
+
+
 
 
 </Routes>

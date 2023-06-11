@@ -1,0 +1,70 @@
+#third {
+    padding-top: 50px;
+
+    .title {
+        text-align: center;
+
+        .upper {
+            color: #4a4a4a;
+            font-family: "Visby CF", Sans-serif;
+            font-size: 50px;
+            font-weight: 300;
+            text-transform: lowercase;
+            line-height: 0px;
+            letter-spacing: -1.5px;
+        }
+
+        .bottom {
+            line-height: 0.6rem;
+            color: #4a4a4a;
+            font-size: 50px;
+            font-weight: 800;
+            text-transform: lowercase;
+            line-height: 70px;
+            letter-spacing: -1.2px;
+        }
+
+        img {
+            margin-top: 20px;
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+
+        li {
+            list-style: none;
+
+            .title {
+                font-family: "Visby CF", Sans-serif;
+                font-size: 21px;
+                font-weight: 800;
+                font-style: normal;
+                line-height: 1.33em;
+            }
+
+            .text {
+                text-align: center;
+                color: #a1a1a1;
+            }
+        }
+    }
+
+    .logoSVG {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo_title {
+        h2 {
+            font-size: 21px;
+            font-weight: 800;
+            font-style: normal;
+            color: #675850;
+        }
+    }
+}

@@ -19,7 +19,7 @@
 }
 .header .container-fluid .row .social-icons a i {
   color: black;
-  font-size: 21px;
+  font-size: 15px;
 }
 .header .container-fluid .row .request_button_wrapper {
   box-sizing: border-box;
@@ -42,13 +42,14 @@
 .header .container-fluid .row .request_button_wrapper .request .request_button {
   display: flex;
   justify-content: center;
+  font-weight: 500;
 }
 .header .container-fluid .row .searching a {
   text-decoration: none;
   color: black;
 }
 .header .container-fluid .row .searching a i {
-  font-size: 21px;
+  font-size: 15px;
 }
 
 .footer {
@@ -1166,6 +1167,426 @@ section .navbarBottom ul li a:hover {
   border: none;
   color: #323232;
   font-weight: 700;
+}
+
+#first .images {
+  width: 100%;
+}
+#first .images img {
+  width: 100%;
+}
+#first .titles_image {
+  padding: 30px;
+}
+#first .titles_image h2 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 70px;
+  color: #494949;
+}
+#first .titles_image p {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 10px;
+}
+#first .left {
+  padding: 50px;
+}
+#first .left .titles .first {
+  display: flex;
+  justify-content: start;
+}
+#first .left .titles .first h2 {
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: lowercase;
+  line-height: 70px;
+}
+#first .border_edu {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 21px 0 21px 50px;
+}
+#first .border_edu .line {
+  height: 4px;
+  width: 105px;
+  background-image: url(https://code.edu.az/wp-content/uploads/2021/07/sep-line.png);
+}
+
+#second {
+  padding: 50px;
+  background-color: white;
+}
+#second .images {
+  position: relative;
+  cursor: pointer;
+}
+#second .images:hover .bg {
+  opacity: 1;
+  pointer-events: auto;
+}
+#second .images:hover img {
+  transform: scale(1.2);
+}
+#second .images img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+#third {
+  background-color: #F4F5F8;
+  padding: 50px;
+}
+#third .base_title {
+  padding: 30px;
+}
+#third .base_title h4 {
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: lowercase;
+  line-height: 70px;
+  color: #494949;
+}
+#third .comp {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+#third .comp .images {
+  border-radius: 50%;
+  padding: 32px;
+  width: 130px;
+  background: white;
+}
+#third .comp .titles {
+  margin: 15px;
+}
+#third .comp .titles .titles_h5 h5 {
+  font-size: 21px;
+  font-weight: 800;
+  font-style: normal;
+  color: #494949;
+}
+#third .comp .titles p {
+  color: #494949;
+  font-size: 14px;
+}
+
+#first {
+  padding-top: 50px;
+}
+#first .image img {
+  width: 670px;
+  height: 353px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#first .title-text {
+  margin-top: 100px;
+}
+#first .title-text .title h2 {
+  font-family: "Visby CF", Sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 0.9em;
+  letter-spacing: -2px;
+  color: #4a4a4a;
+}
+#first .title-text .text {
+  margin-top: 10px;
+}
+#first .title-text .text p {
+  font-family: "Visby CF", Sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+#second {
+  padding-top: 50px;
+}
+#second .optional {
+  width: 310px;
+}
+#second .optional .image {
+  text-align: center;
+}
+#second .optional .image img {
+  width: 310px;
+  height: 255px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#second .optional .date {
+  padding: 10px 10px 0px 10px;
+}
+#second .optional .date span {
+  color: #323232;
+  font-weight: 700;
+  font-size: 22px;
+}
+#second .optional .text {
+  padding: 10px 10px 10px 10px;
+}
+#second .optional .text p {
+  color: #9c9c9c;
+}
+
+#third {
+  background-color: white;
+}
+#third .title h2 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 70px;
+  letter-spacing: -1.2px;
+}
+#third .text {
+  color: #9c9c9c;
+  font-size: 16px;
+}
+
+#four {
+  padding: 40px;
+}
+#four .about {
+  padding: 40px 60px;
+  background-color: #F4F5F8;
+}
+#four .about .title .upper {
+  font-family: "Visby CF", Sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: lowercase;
+  line-height: 1.04em;
+  letter-spacing: -1.5px;
+  color: #4a4a4a;
+}
+#four .about .title .bottom {
+  color: #4a4a4a;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: lowercase;
+  line-height: 1.04em;
+  letter-spacing: -1.5px;
+}
+#four .about .text {
+  width: 506px;
+}
+#four .about .text p {
+  margin: 40px 0px 0px 0px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #575757;
+}
+#four .about ul {
+  margin-top: 30px;
+}
+#four .about ul li {
+  margin-top: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #575757;
+}
+#four .about .certificate a {
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  color: black;
+}
+#four .image img {
+  width: 550px;
+  height: 526px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#four {
+  padding: 40px;
+}
+#four .about {
+  padding: 40px 60px;
+  background-color: #F4F5F8;
+}
+#four .about .title .upper {
+  font-family: "Visby CF", Sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: lowercase;
+  line-height: 1.04em;
+  letter-spacing: -1.5px;
+  color: #4a4a4a;
+}
+#four .about .title .bottom {
+  color: #4a4a4a;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: lowercase;
+  line-height: 1.04em;
+  letter-spacing: -1.5px;
+}
+#four .about .text {
+  width: 506px;
+}
+#four .about .text p {
+  margin: 40px 0px 0px 0px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #575757;
+}
+#four .about ul {
+  margin-top: 30px;
+}
+#four .about ul li {
+  margin-top: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #575757;
+}
+#four .about .certificate a {
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  color: black;
+}
+#four .image img {
+  width: 550px;
+  height: 526px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#first {
+  padding-top: 40px;
+}
+#first .title .upper {
+  color: #4a4a4a;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: lowercase;
+  line-height: 70px;
+  letter-spacing: -1.2px;
+}
+#first .title .bottom {
+  color: #4a4a4a;
+  line-height: 3px;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  text-transform: lowercase;
+  letter-spacing: -1.5px;
+  margin-left: 43px;
+}
+#first .logo {
+  padding-bottom: 20px;
+}
+#first .text {
+  color: #8b8b8b;
+}
+
+#second {
+  padding-top: 50px;
+}
+#second .about {
+  display: flex;
+  justify-content: start;
+}
+#second .about .image {
+  text-align: center;
+}
+#second .about .image img {
+  width: 208px;
+  height: 208px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#second .about .title-text .title a {
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+  font-family: visby cf, Sans-serif !important;
+  text-decoration: none;
+}
+#second .about .title-text .text {
+  font-family: visby cf, Sans-serif !important;
+  margin-top: 10px;
+  color: #8b8b8b;
+}
+#second .about .title-text .other a {
+  color: black;
+  font-weight: 700;
+  font-family: visby cf, Sans-serif !important;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+#third {
+  padding-top: 50px;
+}
+#third .title {
+  text-align: center;
+}
+#third .title .upper {
+  color: #4a4a4a;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: lowercase;
+  line-height: 0px;
+  letter-spacing: -1.5px;
+}
+#third .title .bottom {
+  line-height: 0.6rem;
+  color: #4a4a4a;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: lowercase;
+  line-height: 70px;
+  letter-spacing: -1.2px;
+}
+#third .title img {
+  margin-top: 20px;
+}
+#third ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+#third ul li {
+  list-style: none;
+}
+#third ul li .title {
+  font-family: "Visby CF", Sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1.33em;
+}
+#third ul li .text {
+  text-align: center;
+  color: #a1a1a1;
+}
+#third .logoSVG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#third .logo_title h2 {
+  font-size: 21px;
+  font-weight: 800;
+  font-style: normal;
+  color: #675850;
 }
 
 body {

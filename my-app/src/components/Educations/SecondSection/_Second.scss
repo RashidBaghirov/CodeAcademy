@@ -1,0 +1,45 @@
+
+#second {
+    padding-top: 50px;
+    .about {
+        display: flex;
+        justify-content: start;
+        .image {
+            text-align: center;
+            img {
+                width: 208px;
+                height: 208px;
+                object-fit: contain;
+            }
+        }
+
+        .title-text{
+            .title{
+                a{
+                    font-size: 18px;
+                    color: black;
+                    font-weight: 700;
+                    font-family: visby cf,Sans-serif!important;
+                    text-decoration: none;
+                }
+            }
+            .text{
+                font-family: visby cf,Sans-serif!important;
+                margin-top: 10px;
+                color: #8b8b8b;
+            }
+            .other{
+                
+                a{
+                    color: black;
+                    font-weight: 700;
+
+                    font-family: visby cf,Sans-serif!important;
+                    display: inline-block;
+                    margin-top: 20px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

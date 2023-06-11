@@ -8,15 +8,6 @@ import StudentsCM from './components/StudentsCM/StudentsCM'
 import Portnyor from './components/Portnyor/Portnyor'
 import Graduate from './components/Graduate/Graduate'
 import Footer from './components/Footer/Footer'
-
-
-
-
-
-
-
-
-
 function App() {
   return (
     <div className="App">
@@ -29,8 +20,6 @@ function App() {
       <Portnyor />
       <Graduate />
       <Footer />
-      
-
     </div>
   );
 }

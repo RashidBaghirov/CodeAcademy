@@ -1,0 +1,38 @@
+#first {
+    padding-top: 50px;
+
+    .image {
+        img {
+            width: 670px;
+            height: 353px;
+            object-fit: contain;
+        }
+    }
+
+    .title-text {
+        margin-top: 100px;
+
+        .title {
+            h2 {
+                font-family: "Visby CF", Sans-serif;
+                font-size: 60px;
+                font-weight: 800;
+                line-height: 0.9em;
+                letter-spacing: -2px;
+                color: #4a4a4a;
+            }
+        }
+
+        .text {
+            margin-top: 10px;
+
+            p {
+                font-family: "Visby CF", Sans-serif;
+
+                font-size: 16px;
+                line-height: 1.5em;
+            }
+        }
+    }
+}
+

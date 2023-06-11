@@ -1,6 +1,6 @@
 import React from "react";
 import "./_Footer.scss";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -12,20 +12,29 @@ function Footer() {
               <h4>Akademiya</h4>
               <ul>
                 <li>
-                  <a>Haqqımızda</a>
+                  <a>
+                    <Link style={{ textDecoration: "none" }} to="/about">
+                      Haqqımızda
+                    </Link>
+                  </a>
                 </li>
                 <li>
-                  
-                  <Link style={{textDecoration:"none"}} to="/akademi"><a>Akademik Partnyorlar</a></Link>
+                  <Link style={{ textDecoration: "none" }} to="/akademi">
+                    <a>Akademik Partnyorlar</a>
+                  </Link>
                 </li>
                 <li>
                   <a>Aktiv Vakansiyallar</a>
                 </li>
                 <li>
-                  <a>Karyera və Talant Mərkəzi</a>
+                  <a>
+                    <Link style={{ textDecoration: "none" }} to="/karyera">
+                      Karyera və Talant Mərkəzi
+                    </Link>
+                  </a>
                 </li>
                 <li>
-                  <a>Təhsil Modeli</a>
+                  <Link style={{ textDecoration: "none" }} to="/education">Təhsil Modeli</Link>
                 </li>
                 <li>
                   <a>Məzunlarımız</a>
@@ -72,9 +81,9 @@ function Footer() {
           </div>
           <div className="col-lg-4">
             <div className="footer_foot d-flex justify-content-center">
-             <Link to="/">
-             <img src="/images/logofoot.png"/>
-             </Link>
+              <Link to="/">
+                <img src="/images/logofoot.png" />
+              </Link>
             </div>
           </div>
           <div className="col-lg-4">

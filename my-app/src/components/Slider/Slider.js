@@ -74,25 +74,23 @@ const MySlider = () => {
                       <div className="dropdown-menu">
                         <ul>
                           <li>
-                            <a>
+                          <Link  style={{textDecoration:"none"}} to="/about">
                             Haqqımızda
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a>
                               <Link to="/akademi">
                               Akademik Partnyorlar</Link>
-                            </a>
                           </li>
                           <li>
-                            <a>
+                          <Link  style={{textDecoration:"none"}} to="/karyera">
                             Karyera və Talant Mərkəzi
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a>
+                          <Link to="/education">
                             Təhsil Modeli
-                            </a>
+                           </Link>
                           </li>
                           <li>
                             <a>
@@ -136,28 +134,26 @@ const MySlider = () => {
                   </a>
                 </li>
                 <li>
-                       <a >
                   <Link to="/corporativ">
 
                     Korporativ
                     </Link>
-                  </a>
               
              
                 </li>
                 <li>
-                  <a >
                   <Link to="/contact">
                    Əlaqə
                    </Link>
-                  </a>
                 </li>
               </ul>
             </nav>
           </div>
         </div>
         <div className='logo'>
-            <img  src='/images/download.svg'/>
+        <Link to="/">
+           <img  src='/images/logofoot.png'/>
+           </Link>
         </div>
       </div>
     </div>
