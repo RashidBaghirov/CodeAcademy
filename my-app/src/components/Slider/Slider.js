@@ -147,7 +147,9 @@ const MySlider = () => {
                 </li>
                 <li>
                   <a >
-                    Əlaqə
+                  <Link to="/contact">
+                   Əlaqə
+                   </Link>
                   </a>
                 </li>
               </ul>

@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import Akademi from './Akademi';
 import Corporativ from './Corporativ';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Contact from './Contact';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,6 +18,8 @@ root.render(
   <Route path="/" element={<App />} />
   <Route path="/akademi" element={<Akademi />} />
   <Route path="/corporativ" element={<Corporativ />} />
+  <Route path="/contact" element={<Contact />} />
+
 </Routes>
 </Router>
 );
