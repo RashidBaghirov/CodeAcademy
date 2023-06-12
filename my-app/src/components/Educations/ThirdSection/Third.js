@@ -1,8 +1,8 @@
 import React from "react";
 import "./_Third.scss";
-
 function Third() {
   return (
+    <>
     <section id="third">
         <div className="container">
             <div className="row">
@@ -72,6 +72,7 @@ function Third() {
             </div>
         </div>
     </section>
+    </>
   );
 }
 

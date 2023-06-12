@@ -1,0 +1,35 @@
+#second {
+    .title {
+        text-align: center;
+
+        h4 {
+            font-size: 50px;
+            font-weight: 800;
+            text-transform: lowercase;
+            line-height: 70px;
+        }
+    }
+
+    .category {
+        p {
+            font-size: 15px;
+            font-weight: 800;
+        }
+    }
+
+
+    .story{
+        .image{
+            img{
+                border-radius: 50%;
+            }
+        }
+        .abouts{
+            line-height: 5px;
+            margin-top: 30px;
+            .fullname{
+                font-weight: 900;
+            }
+        }
+    }
+}

@@ -37,14 +37,15 @@ function AllHeader() {
                             </Link>
                           </li>
                           <li>
-                          <Link to="/education">
+                          <Link style={{textDecoration:"none"}}  to="/education">
                             Təhsil Modeli
                            </Link>
                           </li>
                           <li>
-                            <a>
-                            Məzunlarımız
-                            </a>
+                          <Link style={{textDecoration:"none"}}  to="/graduant">
+                          Məzunlarımız
+                           </Link>
+                      
                           </li>
                         </ul>
                       </div>

@@ -34,10 +34,14 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <Link style={{ textDecoration: "none" }} to="/education">Təhsil Modeli</Link>
+                  <Link style={{ textDecoration: "none" }} to="/education">
+                    Təhsil Modeli
+                  </Link>
                 </li>
                 <li>
-                  <a>Məzunlarımız</a>
+                  <Link style={{ textDecoration: "none" }} to="/graduant">
+                    Məzunlarımız
+                  </Link>
                 </li>
               </ul>
             </div>

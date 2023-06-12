@@ -93,9 +93,9 @@ const MySlider = () => {
                            </Link>
                           </li>
                           <li>
-                            <a>
-                            Məzunlarımız
-                            </a>
+                          <Link style={{textDecoration:"none"}}  to="/graduant">
+                          Məzunlarımız
+                           </Link>
                           </li>
                         </ul>
                       </div>

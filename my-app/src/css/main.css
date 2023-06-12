@@ -946,12 +946,8 @@ section .navbarBottom ul li a:hover {
   font-weight: 800;
   text-transform: lowercase;
   line-height: 70px;
-  letter-spacing: -1.2px;
 }
-#logos .images {
-  padding-top: 30px;
-}
-#logos .images img {
+#logos .images_cmp img {
   width: 110px;
   height: 95px;
   -o-object-fit: contain;
@@ -1589,6 +1585,30 @@ section .navbarBottom ul li a:hover {
   color: #675850;
 }
 
+#second .title {
+  text-align: center;
+}
+#second .title h4 {
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: lowercase;
+  line-height: 70px;
+}
+#second .category p {
+  font-size: 15px;
+  font-weight: 800;
+}
+#second .story .image img {
+  border-radius: 50%;
+}
+#second .story .abouts {
+  line-height: 5px;
+  margin-top: 30px;
+}
+#second .story .abouts .fullname {
+  font-weight: 900;
+}
+
 body {
   overflow-x: hidden;
-}/*# sourceMappingURL=main.css.map */
+}

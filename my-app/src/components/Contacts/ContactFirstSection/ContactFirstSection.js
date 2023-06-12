@@ -12,7 +12,7 @@ function ContactFirstSection() {
                 <div className="first">
                   <h2>bizimlə</h2>
                 </div>
-                <div className="second">
+                <div className="second ms-5">
                   <h2>əlaqə</h2>
                 </div>
               </div>
