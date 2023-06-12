@@ -14,6 +14,8 @@ import Karyera from './Karyera';
 import About from './About';
 import EducationModel from './EducationModel';
 import GraduantsPage from './GraduantsPage';
+import GraduantAbout from './GraduantAbout';
+
 
 
 
@@ -30,12 +32,7 @@ root.render(
   <Route path="/about" element={<About />} />
   <Route path="/education" element={<EducationModel />} />
   <Route path="/graduant" element={<GraduantsPage />} />
-
-
-
-
-
-
+  <Route path="/graduantabout" element={<GraduantAbout />} />
 </Routes>
 </Router>
 );

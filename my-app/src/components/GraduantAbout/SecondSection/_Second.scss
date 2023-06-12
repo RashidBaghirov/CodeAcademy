@@ -1,0 +1,50 @@
+#second{
+    padding-top: 40px;
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;     
+        h2{
+            color: #4A4A4A;
+            font-family: "Visby CF", Sans-serif;
+            font-size: 21px;
+            font-weight: 600;
+            font-style: normal;
+            line-height: 25.2px;
+            width: 190px;
+        }
+    }
+    .chat{
+        padding-top: 30px;
+        .leftside{
+            text-align: start;
+            .text{
+                p{
+                    font-family: "Visby CF", Sans-serif;
+                    font-size: 21px;
+                    font-weight: 800;
+                    font-style: normal;
+                    line-height: 1.33em
+                }
+            }
+            .image{
+                img{
+                    width: 104px;
+                    height: 3px;
+                    object-fit: contain;
+                }
+            }
+
+        }
+        .rightside{
+            text-align: start;
+            .text{
+                p{
+                    color: #8b8b8b;
+                    font-family: "Visby CF", Sans-serif !important
+                }
+            }
+        }
+    }
+
+}

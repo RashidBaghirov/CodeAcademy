@@ -1,0 +1,67 @@
+#third{
+    padding-top: 100px;
+    .images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       .oddImage{
+        position: relative;
+        bottom: 127px;
+            img{
+                width: 378px;
+                height: 309px;
+                object-fit: contain;
+                margin-right: 20px;
+            }
+        }
+        .evenImages{
+            .upper{
+                img{
+                    width: 244px;
+                    height: 162px;
+                    object-fit: contain;
+                }
+            }
+            .bottom{
+                margin-top: 20px;
+                img{
+                    width: 244px;
+                    height: 244px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    .title-text{
+        .title{
+            .upper{
+                color: #4a4a4a;
+                font-family: "Visby CF", Sans-serif;
+                font-size: 60px;
+                font-weight: 900;
+                line-height: 1.04em;
+                letter-spacing: -1.5px;
+            }
+            .bottom{
+                font-family: "Visby CF", Sans-serif !important;
+                color: #4a4a4a;
+                font-size: 60px;
+                font-weight: 300;
+            }
+        }
+        .text{
+            p{
+                color: #aaaaaa;
+                margin: 30px 0px 0px 50px;
+            }
+        }
+        .navDesighn{
+            p{
+                font-weight: 600;
+                font-family: "Visby CF", Sans-serif !important;
+                margin: 30px 0px 0px 50px;
+                color: #FFCD05;
+            }
+        }
+    }
+}

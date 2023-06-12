@@ -1609,6 +1609,151 @@ section .navbarBottom ul li a:hover {
   font-weight: 900;
 }
 
+#first {
+  padding-top: 50px;
+}
+#first .image img {
+  width: 550px;
+  height: 550px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#first .title-text .title .upper {
+  line-height: 20px;
+  color: #323232;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 72px;
+  letter-spacing: -2px;
+}
+#first .title-text .title .bottom {
+  color: #323232;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 72px;
+  letter-spacing: -2px;
+}
+#first .title-text .title p {
+  font-family: "Visby CF", Sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+#first .title-text .text p {
+  padding-left: 50px;
+  padding-top: 25px;
+  color: #323232;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+#second {
+  padding-top: 40px;
+}
+#second .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#second .title h2 {
+  color: #4A4A4A;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 25.2px;
+  width: 190px;
+}
+#second .chat {
+  padding-top: 30px;
+}
+#second .chat .leftside {
+  text-align: start;
+}
+#second .chat .leftside .text p {
+  font-family: "Visby CF", Sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1.33em;
+}
+#second .chat .leftside .image img {
+  width: 104px;
+  height: 3px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#second .chat .rightside {
+  text-align: start;
+}
+#second .chat .rightside .text p {
+  color: #8b8b8b;
+  font-family: "Visby CF", Sans-serif !important;
+}
+
+#third {
+  padding-top: 100px;
+}
+#third .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#third .images .oddImage {
+  position: relative;
+  bottom: 127px;
+}
+#third .images .oddImage img {
+  width: 378px;
+  height: 309px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 20px;
+}
+#third .images .evenImages .upper img {
+  width: 244px;
+  height: 162px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#third .images .evenImages .bottom {
+  margin-top: 20px;
+}
+#third .images .evenImages .bottom img {
+  width: 244px;
+  height: 244px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#third .title-text .title .upper {
+  color: #4a4a4a;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1.04em;
+  letter-spacing: -1.5px;
+}
+#third .title-text .title .bottom {
+  font-family: "Visby CF", Sans-serif !important;
+  color: #4a4a4a;
+  font-size: 60px;
+  font-weight: 300;
+}
+#third .title-text .text p {
+  color: #aaaaaa;
+  margin: 30px 0px 0px 50px;
+}
+#third .title-text .navDesighn p {
+  font-weight: 600;
+  font-family: "Visby CF", Sans-serif !important;
+  margin: 30px 0px 0px 50px;
+  color: #FFCD05;
+}
+
 body {
   overflow-x: hidden;
 }
