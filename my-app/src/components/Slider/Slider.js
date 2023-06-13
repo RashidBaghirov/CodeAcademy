@@ -69,7 +69,9 @@ const MySlider = () => {
               <ul>
                 <li>
                   <a onMouseEnter={() => handleMenuToggle('akademiya')} onMouseLeave={() => handleMenuToggle('akademiya')}>
+                  <Link  style={{textDecoration:"none"}} to="/about">
                     Akademiya
+                    </Link>
                     {activeMenu === 'akademiya' && (
                       <div className="dropdown-menu">
                         <ul>
@@ -103,30 +105,31 @@ const MySlider = () => {
                   </a>
                 </li>
                 <li>
-                  <a onMouseEnter={() => handleMenuToggle('tedris')} onMouseLeave={() => handleMenuToggle('tedris')}>
+                <a onMouseEnter={() => handleMenuToggle('tedris')} onMouseLeave={() => handleMenuToggle('tedris')}>
                     Tədris sahələri
                     {activeMenu === 'tedris' && (
                       <div className="dropdown-menu">
                         <ul>
                           <li>
-                            <a>
+                          <Link style={{textDecoration:"none"}}  to="/profession">
                             Digital Marketinq
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a>
-                            Proqramlaşdırma
-                            </a>
+                          <Link style={{textDecoration:"none"}}  to="/profession">
+                          Proqramlaşdırma
+                            </Link>
+                        
                           </li>
                           <li>
-                            <a>
+                          <Link style={{textDecoration:"none"}}  to="/profession">
                             Dizayn
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a>
+                          <Link style={{textDecoration:"none"}}  to="/profession">
                             İT və Kiber Təhlükəsizlik
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>

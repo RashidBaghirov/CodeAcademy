@@ -19,16 +19,16 @@ function Header() {
             <div >
               <div className="social-icons">
                 <a className="m-3">
-                  <i class="bi bi-facebook"></i>
+                  <i className="bi bi-facebook"></i>
                 </a>
                 <a className="m-3">
-                  <i class="bi bi-instagram"></i>
+                  <i className="bi bi-instagram"></i>
                 </a>
                 <a className="m-3">
-                  <i class="bi bi-linkedin"></i>
+                  <i className="bi bi-linkedin"></i>
                 </a>
                 <a className="m-3">
-                  <i class="bi bi-youtube"></i>
+                  <i className="bi bi-youtube"></i>
                 </a>
               </div>
             </div>
@@ -38,15 +38,15 @@ function Header() {
               <div className="col-lg-6  d-flex justify-content-center align-items-center">
                 <div className="searching">
                   <a className="m-3">
-                    <i class="bi bi-search"></i>
+                    <i className="bi bi-search"></i>
                   </a>
                 </div>
               </div>
               <div className="col-lg-4">
-                <div class="request_button_wrapper">
+                <div className="request_button_wrapper">
                   <Link className="request" to="/request">
-                    <span class="request_button">
-                      <span class="request_button_text">Müraciət et</span>
+                    <span className="request_button">
+                      <span className="request_button_text">Müraciət et</span>
                     </span>
                   </Link>
                 </div>

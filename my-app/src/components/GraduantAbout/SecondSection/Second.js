@@ -5,9 +5,9 @@ import Left from "./Left";
 function Second(){
     return(
         <section id="second">
-        <div class="container">
-            <div class="row">
-                <div class="title">
+        <div className="container">
+            <div className="row">
+                <div className="title">
                     <h2>
                         Kiçik müsahibə və ya həyat hekayəs
                     </h2>

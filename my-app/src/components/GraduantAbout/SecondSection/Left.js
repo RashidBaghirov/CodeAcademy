@@ -2,18 +2,18 @@ import React from "react";
 
 function Left({ image, question, answer }){
     return(
-        <div class="chat">
-        <div class="row gx-5">
-         <div class="leftside col-lg-6">
-             <div class="text">
+        <div className="chat">
+        <div className="row gx-5">
+         <div className="leftside col-lg-6">
+             <div className="text">
                  <p>{question}</p>
              </div>
-             <div class="image">
+             <div className="image">
                  <img src={image} alt="" />
              </div>
          </div>
-         <div class="rightside col-lg-6">
-             <div class="text">
+         <div className="rightside col-lg-6">
+             <div className="text">
                  <p>{answer}</p>
              </div>
          </div>

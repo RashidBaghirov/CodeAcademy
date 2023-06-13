@@ -1754,6 +1754,169 @@ section .navbarBottom ul li a:hover {
   color: #FFCD05;
 }
 
+#first {
+  padding-top: 50px;
+}
+#first .title h1 {
+  font-family: visby cf, Sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 0.9em;
+}
+#first .text-image .image {
+  padding-bottom: 20px;
+}
+#first .text-image .image img {
+  width: 104px;
+  height: 3px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#first .text-image .text p {
+  color: #aaa9a9;
+  font-family: "Visby CF", Sans-serif !important;
+}
+
+#second {
+  padding-top: 40px;
+}
+#second .firstCart {
+  border: 1px solid black;
+  padding: 40px;
+  width: 550px;
+  height: 372px;
+}
+#second .firstCart .title_PRo {
+  text-align: start !important;
+}
+#second .firstCart .title_PRo h2 {
+  font-family: "Visby CF", Sans-serif !important;
+  font-weight: 600;
+  font-size: 20px;
+}
+#second .firstCart .text {
+  margin-top: 20px;
+}
+#second .firstCart .text p {
+  font-family: "Visby CF", Sans-serif !important;
+}
+#second .firstCart .button a {
+  margin-top: 75px;
+  width: 138px;
+  height: 60px;
+  background-color: #872891;
+  border-color: #872891;
+  text-align: center;
+  transition: 0.5s;
+  padding-top: 17px;
+  color: white;
+  font-family: "Visby CF", Sans-serif !important;
+  display: inline-block;
+  text-decoration: none;
+}
+#second .firstCart .button a:hover {
+  background-color: #818a91;
+  color: #4a4a4a;
+}
+#second .firstCart .buttonSecond a {
+  margin-top: 123px;
+  width: 138px;
+  height: 60px;
+  background-color: #872891;
+  border-color: #872891;
+  text-align: center;
+  transition: 0.5s;
+  padding-top: 17px;
+  color: white;
+  font-family: "Visby CF", Sans-serif !important;
+  display: inline-block;
+  text-decoration: none;
+}
+#second .firstCart .buttonSecond a:hover {
+  background-color: #818a91;
+  color: #4a4a4a;
+}
+
+#education {
+  padding: 50px;
+}
+#education .title h1 {
+  font-family: "Visby CF", Sans-serif !important;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 70px;
+  letter-spacing: -1.2px;
+}
+#education form {
+  margin-top: 20px;
+}
+#education form input {
+  display: none;
+}
+#education form input + label {
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 5px;
+}
+#education form input:checked + label {
+  background-color: #872891;
+  color: white;
+}
+#education form label {
+  color: #444;
+}
+#education .cart {
+  margin-top: 40px;
+  border: 1px solid black;
+  padding: 20px;
+}
+#education .cart .name span {
+  font-family: "Visby CF", Sans-serif !important;
+}
+#education .cart .title {
+  margin-top: 20px;
+}
+#education .cart .title h2 {
+  font-family: "Visby CF", Sans-serif !important;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+#education .cart .text {
+  margin-top: 20px;
+}
+#education .cart .text p {
+  font-family: "Visby CF", Sans-serif !important;
+}
+#education .cart .button a {
+  margin-top: 20px;
+  width: 138px;
+  height: 60px;
+  background-color: #872891;
+  border-color: #872891;
+  text-align: center;
+  transition: 0.5s;
+  padding-top: 17px;
+  color: white;
+  font-family: "Visby CF", Sans-serif !important;
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 27px;
+}
+#education .cart .button a:hover {
+  background-color: #818a91;
+  color: #4a4a4a;
+}
+#education .cart .dayelse {
+  margin-top: 20px;
+}
+#education .cart .dayelse span {
+  font-family: "Visby CF", Sans-serif !important;
+}
+
 body {
   overflow-x: hidden;
 }

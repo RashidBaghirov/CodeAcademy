@@ -51,16 +51,24 @@ function Footer() {
               <h4>Tədris sahələri</h4>
               <ul>
                 <li>
-                  <a>Digital Marketinq</a>
+                  <Link style={{ textDecoration: "none" }} to="/profession">
+                    Digital Marketinq
+                  </Link>
                 </li>
                 <li>
-                  <a>Proqramlaşdırma</a>
+                  <Link style={{ textDecoration: "none" }} to="/profession">
+                    Proqramlaşdırma
+                  </Link>
                 </li>
                 <li>
-                  <a>Dizayn</a>
+                  <Link style={{ textDecoration: "none" }} to="/profession">
+                    Dizayn
+                  </Link>
                 </li>
                 <li>
-                  <a>İt və Kiber Təhlükəsizlik</a>
+                  <Link style={{ textDecoration: "none" }} to="/profession">
+                    İT və Kiber Təhlükəsizlik
+                  </Link>
                 </li>
               </ul>
             </div>

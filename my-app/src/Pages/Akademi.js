@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer'
-import AllHeader from './components/AllHeader/AllHeader'
-import AllPartnyor from './components/AllPartnyor/AllPartnyor'
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer'
+import AllHeader from '../components/AllHeader/AllHeader'
+import AllPartnyor from '../components/AllPartnyor/AllPartnyor'
 
 
 
