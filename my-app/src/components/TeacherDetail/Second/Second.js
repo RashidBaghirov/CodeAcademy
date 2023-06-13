@@ -4,23 +4,23 @@ import "./_Second.scss";
 function Second() {
   return (
     <section id="second">
-      <div class="container">
-        <div class="row">
-          <div class="titleCart">
+      <div className="container">
+        <div className="row">
+          <div className="titleCart">
             <h1>Proqramlaşdırma Tədris Proqramları</h1>
           </div>
 
-          <div class="cart col-8">
-            <div class="name">
+          <div className="cart col-8">
+            <div className="name">
               <span>Fərdi</span>
             </div>
-            <div class="title">
+            <div className="title">
               <h2>Full Stack Proqramlaşdırma</h2>
             </div>
-            <div class="dayelse">
+            <div className="dayelse">
               <span>350 saat | Campus | Online Campus</span>
             </div>
-            <div class="text">
+            <div className="text">
               <p>
                 Code Academy-də keçirilən Proqramlaşdırma üzrə tədris proqramı
                 sektorun ehtiyaclarını nəzərə alaraq hazırlanmışdır. Təhsilin
@@ -33,7 +33,7 @@ function Second() {
                 tətbiqinin dərhal həyata keçirilməsi […]​
               </p>
             </div>
-            <div class="button">
+            <div className="button">
               <a href="">Ətraflı</a>
             </div>
           </div>
