@@ -10,7 +10,7 @@ function Third() {
       <div className="container">
         <div className="row">
           <div className="title">
-            <h1>Digital Marketinq Tədris Proqramları</h1>
+            <h1>Proqramlaşdırma Tədris Proqramları</h1>
           </div>
           <form action="">
             <input type="radio" id="Hamısı" name="type_edu" />

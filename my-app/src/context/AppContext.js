@@ -7,38 +7,42 @@ export const AppProvider = ({ children }) => {
     {
       id:1,
       educationName: "Korporativ",
-      title: "SMM - Sosyal Medya İdare ve Hesap",
-      text: "Rəqəmsal medianın əsas kanallarından biri olan sosial media həm də brendlər üçün ən vacib ünsiyyət və marketinq vasitələrindən biridir. Bu təlimdə iştirakçılar sosial media şəbəkələri ilə tanış olur, sosial medianın idarə edilməsinin bizneslər üçün necə olması lazım olduğunu, təhlil və hesabat proseslərinin necə həyata keçirilməsini öyrənirlər.",
+      title: "Programming in HTML with Javascript and CSS3​",
+      text: "ştirakçılar HTML5, Javascript və CSS3 texnologiyalarını baza səviyyədə öyrənəcək və proqramlaşdırma məntiqi, dəyişənlərin tərifi və istifadəsi, istifadəçi interfeysinin inkişafı, Javascript və CSS3 təlimi ilə HTML-də Proqramlaşdırma ilə istifadəçi daxiletmələrinin ələ keçirilməsi üzrə praktiki nümunələr verəcəklər. Müvafiq olaraq, onlar qabaqcıl Veb və Windows Mağazası proqramlarını inkişaf etdirmək üçün alacaqları təkmilləşdirilmiş təlimdə mövzuları daha asan mənimsəyəcək və effektiv öyrənmə prosesini yaşayacaqlar. Təlim daxili laboratoriya ssenariləri ilə uğurlu və effektiv HTML5 tətbiqi yaratmaq məqsədilə tələb olunan addımları dəstəkləmək üçün nəzərdə tutulmuşdur.",
       day: "3 gün",
-      info: "Təlimdə rəqəmsal agentlikdə işə düzəlmək, beynəlxalq və yerli SMM məsləhətçiliyi ilə əlavə gəlir qazanmaq istəyənlər və sosial media mütəxəssisləri iştirak edə bilər.",
-      certificate: "“Sosial Media İdarəetmə və Hesabat”",
+  
     },
     {
       id:2,
       educationName:"Korporativ",
-      title:"SEM - Search Engine Marketing​",
-      text:"Search Engine Marketing (SEM), yəni Search Engine Marketing, axtarış sistemlərində orqanik sıralamaların kifayət etmədiyi hallarda axtarış sistemlərində planlaşdırılan reklamları əhatə edir. Təlimdə veb səhifələrin axtarış sistemlərində ödənişli yerləşdirmələr nəzərdə tutulur. Google rəqəmsal reklam məhsullarının istifadə edildiyi bu təlimdə iştirakçılar; Onlar Google axtarış şəbəkəsində kampaniya parametrləri, mətn reklamları və açar sözlər haqqında öyrənirlər. Onlar həmçinin kampaniya xərclərini planlaşdırır və axtarış motoru reklamları üçün strategiyalar hazırlayırlar.", 
+      title:"Application Development with React Native​",
+      text:"React Native Facebook tərəfindən hazırlanmış və dəstəklənmişdir; iOS, Android, Windows (UWP) əməliyyat sistemlərində və veb-platformasında proqramlar hazırlamaq üçün istifadə olunur. Bu, yerli çıxışı, yəni tətbiqin işlənib hazırlandığı mobil cihazların əməliyyat sisteminə xas olan çıxışı yarada bilən açıq mənbəli mobil proqram inkişaf kitabxanasıdır. Mobil əməliyyat sistemləri üçün JavaScript dili ilə inkişaf etməyə imkan verir.", 
         day:"3 gün",
-      info: "Təlimdə rəqəmsal agentlikdə işə düzəlmək, beynəlxalq və yerli SMM məsləhətçiliyi ilə əlavə gəlir qazanmaq istəyənlər və sosial media mütəxəssisləri iştirak edə bilər.",
-      certificate: "“Sosial Media Marketing”",
+
     },
     {
       id:3,
       educationName: "Korporativ",
-      title: "SEO – Search Engine Optimization",
-      text: "Search Engine Optimization (SEO), axtarış motorlarında veb-saytların sıralamasını müəyyən edən bütün tədbirlərdir. Bu təlimdə iştirak edənlər; saytda və saytdan kənar faktorların əsas başlığında veb-saytların optimallaşdırılması, axtarış sisteminin sıralama meyarları və cari alqoritmləri nəzərə alaraq müraciətlər edirlər. SEO alətlərindən istifadə edərək onların analitikasını və istifadəçi davranışını araşdırır və optimallaşdırmaları texniki cəhətdən gücləndirirlər. Bundan əlavə, saytdan kənar amillərdə saytın trafikinə təsir edən rəqəmsal fəaliyyətlər haqqında məlumat əldə edirlər.",
+      title: "Application Development with React Native",
+      text: "React Native Facebook tərəfindən hazırlanmış və dəstəklənmişdir; iOS, Android, Windows (UWP) əməliyyat sistemlərində və veb-platformasında proqramlar hazırlamaq üçün istifadə olunur. Bu, yerli çıxışı, yəni tətbiqin işlənib hazırlandığı mobil cihazların əməliyyat sisteminə xas olan çıxışı yarada bilən açıq mənbəli mobil proqram inkişaf kitabxanasıdır. Mobil əməliyyat sistemləri üçün JavaScript dili ilə inkişaf etməyə imkan verir.",
       day: "3 gün",
-      info: "Təlimdə rəqəmsal agentlikdə işə düzəlmək, beynəlxalq və yerli SMM məsləhətçiliyi ilə əlavə gəlir qazanmaq istəyənlər və sosial media mütəxəssisləri iştirak edə bilər.",
-      certificate: "“Search Engine Optimization”",
+  
     },
     {
       id:4,
       educationName: "Korporativ",
-      title: "Digital Marketing Professional – DMI Pro",
-      text: "Digital Marketinq tədris proqramı Code Academy ilə İrlandiya mərkəzli Digital Marketing İnstitute-un eksklüziv partnyorluğu əsasında tədris edilir. Eksklüziv partnyorluq nəticəsində Code Academy-nin Digital Marketinq tədris proqramı beynəlxalq standarta uyğun olaraq hazırlanmışdır və bu proqramdan məzun olan tələbələr ödənişsiz şəkildə beynəlxalq “Certified Digital Marketing Professional” sertifikat imtahanına daxil olaraq bu sertifikatı əldə etmək imkanına sahib olurlar.",
+      title: "Application Development with .NET Core",
+      text: "ASP.NET Core uzun illər Microsoft tərəfindən paylanmış ASP.NET-in açıq mənbəli versiyasıdır. ASP.NET Core müasir, bulud əsaslı, internetə qoşulmuş proqramların qurulması üçün platformadan müstəqil, yüksək performanslı, açıq mənbəli proqram inkişaf infrastrukturu təqdim edir. Cross-Platform, yəni platformadan müstəqil veb proqramlar .NET Core ilə hazırlana və Windows, macOS, Linux əməliyyat sistemlərində işləyə bilər. Açıq mənbə olduğundan, ASP.NET Core-un inkişafı icmalar üçün açıqdır.",
       day: "3 gün",
-      info: "Təlimdə rəqəmsal agentlikdə işə düzəlmək, beynəlxalq və yerli SMM məsləhətçiliyi ilə əlavə gəlir qazanmaq istəyənlər və sosial media mütəxəssisləri iştirak edə bilər.",
-      certificate: "“Search Engine Optimization”",
+
+    },
+    {
+      id:5,
+      educationName: "Fərdi",
+      title: "Full Stack Proqramlaşdırma​",
+      text: "Code Academy-də keçirilən Proqramlaşdırma üzrə tədris proqramı sektorun ehtiyaclarını nəzərə alaraq hazırlanmışdır. Təhsilin 85%-i praktiki iş üzərində qurulmuşdur. Məqsəd sadəcə Proqramlaşdırmanın incəliklərini öyrətmək deyil, eyni zamanda müəssisələrin veb proqramlaşdırmaya olan ehtiyaclarını professional şəkildə qarşılayacaq mütəxəssislər yetişdirməkdir.",
+      day: "3 gün",
+
     }
   ]);
 
