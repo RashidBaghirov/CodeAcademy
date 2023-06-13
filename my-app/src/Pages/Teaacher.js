@@ -2,25 +2,23 @@ import React from 'react';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer'
 import AllHeader from '../components/AllHeader/AllHeader'
-import First from '../components/GraduantPage/First/First';
-import Second from '../components/GraduantPage/Second/Second';
-import Third from '../components/GraduantPage/Third/Third';
+import First from '../components/TeacherDetail/First/First';
+import Second from '../components/TeacherDetail/Second/Second';
 
 
-
-function GraduantsPage() {
+function Teaacher() {
     return (
       <div className="App">
        <Header />
        <AllHeader />
-        <First />
-        <Second />
-        <Third />
-       
+        <First/>
+        <Second/>
 
         <Footer />
+        
+  
       </div>
     );
   }
   
-  export default GraduantsPage;
+  export default Teaacher;

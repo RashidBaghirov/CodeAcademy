@@ -1,0 +1,77 @@
+#second {
+    padding-top: 150px;
+    .titleCart{
+        text-align: center;
+        h1{
+            font-family: "Visby CF", Sans-serif !important;
+            font-size: 36px;
+            font-weight: 800;
+            line-height: 70px;
+            letter-spacing: -1.2px;
+        }
+    }
+    .cart {
+       margin: 0 auto;
+        margin-top: 40px;
+        border: 1px solid black;
+        padding: 20px;
+
+        .name {
+            span {
+                font-family: "Visby CF", Sans-serif !important;
+
+            }
+        }
+
+        .title {
+            margin-top: 20px;
+
+            h2 {
+                font-family: "Visby CF", Sans-serif !important;
+                font-size: 1.5em;
+                font-weight: 800;
+            }
+        }
+
+        .text {
+            margin-top: 20px;
+
+            p {
+                font-family: "Visby CF", Sans-serif !important;
+            }
+        }
+
+        .button {
+            text-align: end;
+            a {
+                margin-top: 20px;
+                width: 138px;
+                height: 60px;
+                background-color: white;
+                border: 1px solid black;
+                text-align: center;
+                transition: .5s;
+                padding-top: 17px;
+                    color: #4a4a4a;
+
+                font-family: "Visby CF", Sans-serif !important;
+                display: inline-block;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: #818a91;
+                    color: #4a4a4a;
+                }
+            }
+        }
+
+        .dayelse {
+            margin-top: 20px;
+
+            span {
+                font-family: "Visby CF", Sans-serif !important;
+
+            }
+        }
+    }
+}

@@ -1754,6 +1754,81 @@ section .navbarBottom ul li a:hover {
   color: #FFCD05;
 }
 
+#fourth {
+  padding-top: 50px;
+}
+#fourth .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#fourth .title h2 {
+  color: #4a4a4a;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: lowercase;
+  line-height: 70px;
+  letter-spacing: -1.2px;
+}
+#fourth ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+#fourth ul li {
+  padding-top: 20px;
+  width: 380px;
+  list-style: none;
+  text-align: center;
+}
+#fourth ul li .image img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#fourth ul li .aboutPerson {
+  padding-top: 10px;
+}
+#fourth ul li .aboutPerson .name {
+  font-family: "Visby CF", Sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: -1.5px;
+}
+#fourth ul li .aboutPerson .surname {
+  font-family: "Visby CF", Sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -1.5px;
+}
+#fourth ul li .speciality {
+  margin: 0 auto;
+  width: 285px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+#fourth ul li .ugur {
+  color: rgba(135, 40, 145, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+#fourth ul li .uguryellow {
+  color: #FFCD05;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
 #first {
   padding-top: 50px;
 }
@@ -1914,6 +1989,131 @@ section .navbarBottom ul li a:hover {
   margin-top: 20px;
 }
 #education .cart .dayelse span {
+  font-family: "Visby CF", Sans-serif !important;
+}
+
+#first {
+  padding-top: 50px;
+}
+#first .image {
+  text-align: center;
+}
+#first .image img {
+  width: 402px;
+  height: 398px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#first .title-text {
+  margin-top: 30px;
+}
+#first .title-text .title .upper {
+  font-family: "Visby CF", Sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 72px;
+  letter-spacing: -2px;
+  color: #323232;
+}
+#first .title-text .title .bottom {
+  font-family: "Visby CF", Sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 72px;
+  letter-spacing: -2px;
+  color: #323232;
+}
+#first .chat {
+  padding-top: 30px;
+}
+#first .chat .leftside {
+  text-align: end;
+}
+#first .chat .leftside .text p {
+  font-family: "Visby CF", Sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1.33em;
+}
+#first .chat .leftside .image {
+  text-align: center;
+}
+#first .chat .leftside .image img {
+  width: 104px;
+  height: 3px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#first .chat .rightside {
+  text-align: start;
+}
+#first .chat .rightside .text p {
+  color: #8b8b8b;
+  font-family: "Visby CF", Sans-serif !important;
+}
+
+#second {
+  padding-top: 150px;
+}
+#second .titleCart {
+  text-align: center;
+}
+#second .titleCart h1 {
+  font-family: "Visby CF", Sans-serif !important;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 70px;
+  letter-spacing: -1.2px;
+}
+#second .cart {
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 1px solid black;
+  padding: 20px;
+}
+#second .cart .name span {
+  font-family: "Visby CF", Sans-serif !important;
+}
+#second .cart .title {
+  margin-top: 20px;
+}
+#second .cart .title h2 {
+  font-family: "Visby CF", Sans-serif !important;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+#second .cart .text {
+  margin-top: 20px;
+}
+#second .cart .text p {
+  font-family: "Visby CF", Sans-serif !important;
+}
+#second .cart .button {
+  text-align: end;
+}
+#second .cart .button a {
+  margin-top: 20px;
+  width: 138px;
+  height: 60px;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  transition: 0.5s;
+  padding-top: 17px;
+  color: #4a4a4a;
+  font-family: "Visby CF", Sans-serif !important;
+  display: inline-block;
+  text-decoration: none;
+}
+#second .cart .button a:hover {
+  background-color: #818a91;
+  color: #4a4a4a;
+}
+#second .cart .dayelse {
+  margin-top: 20px;
+}
+#second .cart .dayelse span {
   font-family: "Visby CF", Sans-serif !important;
 }
 

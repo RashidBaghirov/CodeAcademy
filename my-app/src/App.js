@@ -12,6 +12,7 @@ import GraduantsPage from './Pages/GraduantsPage';
 import GraduantAbout from './Pages/GraduantAbout';
 import Profession from './Pages/Profession';
 import ProfessionDetail from './Pages/ProfessionDetail';
+import Teaacher from './Pages/Teaacher';
 
 
 function App() {
@@ -32,6 +33,8 @@ function App() {
   <Route path="/graduantabout" element={<GraduantAbout />} />
   <Route path="/profession" element={<Profession />} />
   <Route path="/professiondetail" element={<ProfessionDetail />} />
+  <Route path="/teacher" element={<Teaacher />} />
+
 
 
 </Routes>
