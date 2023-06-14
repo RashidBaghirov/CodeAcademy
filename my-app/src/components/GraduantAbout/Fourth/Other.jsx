@@ -3,25 +3,25 @@ import React from "react";
 function Other({image,name,surname,speciality}) {
     return(
         <li>
-        <div class="image">
+        <div className="image">
             <img src={image} alt="" />
         </div>
-        <div class="aboutPerson">
-            <span class="name">
+        <div className="aboutPerson">
+            <span className="name">
                 <b>
                   {name}
 
                 </b>
             </span>
-            <span class="surname">
+            <span className="surname">
                 {surname}
 
             </span>
         </div>
-        <div class="speciality">
+        <div className="speciality">
             <p>{speciality}​</p>
         </div>
-        <div class="ugur">
+        <div className="ugur">
             <span>
                 #UğurHekayəsiBurada 
             </span>

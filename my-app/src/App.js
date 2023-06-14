@@ -13,6 +13,7 @@ import GraduantAbout from './Pages/GraduantAbout';
 import Profession from './Pages/Profession';
 import ProfessionDetail from './Pages/ProfessionDetail';
 import Teaacher from './Pages/Teaacher';
+import Practice from './Pages/Practice';
 
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
   <Route path="/profession" element={<Profession />} />
   <Route path="/professiondetail" element={<ProfessionDetail />} />
   <Route path="/teacher" element={<Teaacher />} />
+  <Route path="/practice" element={<Practice />} />
+
 
 
 

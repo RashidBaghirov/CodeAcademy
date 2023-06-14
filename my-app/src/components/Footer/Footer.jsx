@@ -102,16 +102,16 @@ function Footer() {
             <div className="footer_foot">
               <div className="social-icons d-flex justify-content-start">
                 <a className="m-3">
-                  <i class="bi bi-facebook"></i>
+                  <i className="bi bi-facebook"></i>
                 </a>
                 <a className="m-3">
-                  <i class="bi bi-instagram"></i>
+                  <i className="bi bi-instagram"></i>
                 </a>
                 <a className="m-3">
-                  <i class="bi bi-linkedin"></i>
+                  <i className="bi bi-linkedin"></i>
                 </a>
                 <a className="m-3">
-                  <i class="bi bi-youtube"></i>
+                  <i className="bi bi-youtube"></i>
                 </a>
               </div>
             </div>

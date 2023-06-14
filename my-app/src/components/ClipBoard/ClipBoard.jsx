@@ -96,7 +96,9 @@ function ClipBoard() {
     <section id="clipboard">
       <div className="col-12">
         <div className="clipboard_background">
-          <div className="clipboard_text">
+        </div>
+        <div className="background-overlay">
+        <div className="clipboard_text">
             <h4 className="clipboard_text_h2">
               Code Academy həm arzuladığınız sahəni əlçatan edir, <br />
               həm də gələcək karyera inkişafınız üçün lazımı bilik və bacarıqları formalaşdırır.
@@ -120,8 +122,9 @@ function ClipBoard() {
               </div>
             </div>
           </div>
+
+
         </div>
-        <div className="background-overlay"></div>
       </div>
     </section>
   );

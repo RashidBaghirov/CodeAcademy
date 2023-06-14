@@ -2,12 +2,13 @@ import React from "react";
 import "./_Second.scss";
 import About from "./About";
 
+
 function Second() {
   return (
     <section id="second">
-    <div class="container">
-        <div class="row gy-5 gx-5">
-            <div class="col-lg-6">
+    <div className="container">
+        <div className="row gy-5 gx-5">
+            <div className="col-lg-6">
             <About
             imageSrc="https://code.edu.az/wp-content/uploads/2021/08/layihe-teqdimatlari-300x300.jpg"
             titles=" Buraxılış layihəsi"
@@ -18,7 +19,7 @@ function Second() {
             </div>
 
 
-            <div class="col-lg-6">
+            <div className="col-lg-6">
             <About
             imageSrc="https://code.edu.az/wp-content/uploads/2021/08/praktiki-tedris-metodu-300x300.jpg"
             titles=" Praktiki tədris metodu"
@@ -29,7 +30,7 @@ function Second() {
             </div>
 
 
-            <div class="col-lg-6">
+            <div className="col-lg-6">
             <About
             imageSrc="https://code.edu.az/wp-content/uploads/2021/08/akademik-transkript-300x238.jpeg"
             titles="Akademik Transkript"
@@ -40,7 +41,7 @@ function Second() {
             </div>
 
 
-            <div class="col-lg-6">
+            <div className="col-lg-6">
             <About
             imageSrc="https://code.edu.az/wp-content/uploads/2021/08/mentor-sistemi-300x300.jpeg"
             titles="Mentor Sistemi "
@@ -50,7 +51,7 @@ function Second() {
             />
             </div>
 
-            <div class="col-lg-6">
+            <div className="col-lg-6">
             <About
             imageSrc="https://code.edu.az/wp-content/uploads/2021/08/beynelxalq-sertifikasiya-300x233.jpeg"
             titles="Beynəlxalq Sertifikasiya"
@@ -60,7 +61,7 @@ function Second() {
             />
             </div>
 
-            <div class="col-lg-6">
+            <div className="col-lg-6">
             <About
             imageSrc="https://code.edu.az/wp-content/uploads/2021/08/zemanetli-tehsil-300x300.jpeg"
             titles="Zəmanətli təhsil sistemi "

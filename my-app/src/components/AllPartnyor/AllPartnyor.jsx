@@ -25,16 +25,16 @@ function AllPartnyor() {
       </div>
       <div className="container partnyor_ifo ">
         <div className="row mt-5 d-flex justify-content-center">
-          <div class="col-lg-6">
+          <div className="col-lg-6">
             <div className="image">
               <img
                 src="/images/pt1.png"
                 alt="autodesk-authorized-academic-partner-logo"
               />
             </div>
-            <div class="partnyor_ifo__text">
-              <h2 class="elementor-post__title">Autodesk</h2>
-              <div class="partnyor_ifo__excerpt">
+            <div className="partnyor_ifo__text">
+              <h2 className="elementor-post__title">Autodesk</h2>
+              <div className="partnyor_ifo__excerpt">
                 <p>
                   Autodesk memarlıq, inşaat, istehsal, tikinti, dizayn və s.
                   sahələrdə proqram təminatı hazırlayan dünyanın ən məşhur
@@ -56,16 +56,16 @@ function AllPartnyor() {
           </div>
         </div>
         <div className="row  mt-5 d-flex justify-content-center">
-          <div class="col-lg-6">
+          <div className="col-lg-6">
             <div className="image">
               <img
                 src="/images/pt2.png"
                 alt="autodesk-authorized-academic-partner-logo"
               />
             </div>
-            <div class="partnyor_ifo__text">
-              <h2 class="elementor-post__title">CompTIA</h2>
-              <div class="partnyor_ifo__excerpt">
+            <div className="partnyor_ifo__text">
+              <h2 className="elementor-post__title">CompTIA</h2>
+              <div className="partnyor_ifo__excerpt">
                 <p>
                   CompTIA The Computing Technology Industry Association
                   (CompTIA) ABŞ mərkəzli beynəlxalq IT assosasiyasıdır. CompTIA
@@ -83,16 +83,16 @@ function AllPartnyor() {
           </div>
         </div>
         <div className="row mt-5  d-flex justify-content-center">
-          <div class="col-lg-6">
+          <div className="col-lg-6">
             <div className="image">
               <img
                 src="/images/pt3.jpeg"
                 alt="autodesk-authorized-academic-partner-logo"
               />
             </div>
-            <div class="partnyor_ifo__text">
-              <h2 class="elementor-post__title">Digital Marketing Institute</h2>
-              <div class="partnyor_ifo__excerpt">
+            <div className="partnyor_ifo__text">
+              <h2 className="elementor-post__title">Digital Marketing Institute</h2>
+              <div className="partnyor_ifo__excerpt">
                 <p>
                   Digital Marketing Institute (DMI) Digital Marketinq sahəsində
                   tədris üzrə ixtisaslaşmış qlobal miqyasda məşhur institutdur.
@@ -108,16 +108,16 @@ function AllPartnyor() {
           </div>
         </div>
         <div className="row  mt-5 d-flex justify-content-center">
-          <div class="col-lg-6">
+          <div className="col-lg-6">
             <div className="image">
               <img
                 src="/images/pt4.png"
                 alt="autodesk-authorized-academic-partner-logo"
               />
             </div>
-            <div class="partnyor_ifo__text">
-              <h2 class="elementor-post__title">GitHub</h2>
-              <div class="partnyor_ifo__excerpt">
+            <div className="partnyor_ifo__text">
+              <h2 className="elementor-post__title">GitHub</h2>
+              <div className="partnyor_ifo__excerpt">
                 <p>
                   Github milyonlarla developerlərin, eləcə də şirkətlərin
                   proqramlarını qurub yaratdığı, saxladığı və dəyişdirdiyi ən
@@ -132,16 +132,16 @@ function AllPartnyor() {
           </div>
         </div>
         <div className="row mt-5  d-flex justify-content-center">
-          <div class="col-lg-6">
+          <div className="col-lg-6">
             <div className="image">
               <img
                 src="/images/pt5.jpg"
                 alt="autodesk-authorized-academic-partner-logo"
               />
             </div>
-            <div class="partnyor_ifo__text">
-              <h2 class="elementor-post__title">Microsoft AEP</h2>
-              <div class="partnyor_ifo__excerpt">
+            <div className="partnyor_ifo__text">
+              <h2 className="elementor-post__title">Microsoft AEP</h2>
+              <div className="partnyor_ifo__excerpt">
                 <p>
                   Microsoft Authorized Education Partner (AEP) Proqramı,
                   Microsoft platformasında akademik məhsul və xidmətlər təqdim
@@ -156,16 +156,16 @@ function AllPartnyor() {
           </div>
         </div>
         <div className="row mt-5  d-flex justify-content-center">
-          <div class="col-lg-6">
+          <div className="col-lg-6">
             <div className="image">
               <img
                 src="/images/pt6.png"
                 alt="autodesk-authorized-academic-partner-logo"
               />
             </div>
-            <div class="partnyor_ifo__text">
-              <h2 class="elementor-post__title">Red Hat</h2>
-              <div class="partnyor_ifo__excerpt">
+            <div className="partnyor_ifo__text">
+              <h2 className="elementor-post__title">Red Hat</h2>
+              <div className="partnyor_ifo__excerpt">
                 <p>
                   Red Hat şirkəti Linux əməliyyat sistemində məhsullarını təqdim
                   edir. Şirkətin geniş portfoliosuna hibrid bulud infrastruktur,

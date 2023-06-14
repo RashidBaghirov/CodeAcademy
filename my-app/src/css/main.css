@@ -319,39 +319,46 @@
   justify-content: center;
   align-items: center;
 }
-#clipboard .clipboard_background .clipboard_text .clipboard_text_h2 {
-  color: white;
-  z-index: 5;
-}
-#clipboard .clipboard_background .clipboard_text .counts {
-  display: flex;
-  justify-content: space-around;
-  z-index: 5;
-}
-#clipboard .clipboard_background .clipboard_text .counts span {
-  color: white;
-  font-size: 70px;
-  font-weight: 800;
-  text-transform: lowercase;
-  line-height: 70px;
-  letter-spacing: -1.2px;
-}
-#clipboard .clipboard_background .clipboard_text .counts p {
-  color: white;
-  font-size: 35px;
-  font-weight: 300;
-  text-transform: lowercase;
-  line-height: 0.8em;
-  letter-spacing: -1.5px;
-}
 #clipboard .background-overlay {
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
   position: absolute;
-  background-color: #000;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.4901960784);
+  opacity: 1;
+}
+#clipboard .background-overlay .clipboard_text {
+  text-align: center;
+}
+#clipboard .background-overlay .clipboard_text .clipboard_text_h2 {
+  color: white;
+  z-index: 5;
+  margin-top: 20px;
+}
+#clipboard .background-overlay .clipboard_text .counts {
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+}
+#clipboard .background-overlay .clipboard_text .counts .count {
+  margin-left: 50px;
+}
+#clipboard .background-overlay .clipboard_text .counts .count span {
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  font-weight: 800;
+  text-transform: lowercase;
+  line-height: 70px;
+  letter-spacing: -1.2px;
+}
+#clipboard .background-overlay .clipboard_text .counts .count p {
+  color: white;
+  font-size: 35px;
+  font-weight: 300;
+  text-transform: lowercase;
+  line-height: 0.8em;
+  letter-spacing: -1.5px;
 }
 
 #studentsCM {
@@ -2073,7 +2080,7 @@ section .navbarBottom ul li a:hover {
   border: 1px solid black;
   padding: 20px;
 }
-#second .cart .name span {
+#second .cart .tc_name span {
   font-family: "Visby CF", Sans-serif !important;
 }
 #second .cart .title {
@@ -2084,10 +2091,10 @@ section .navbarBottom ul li a:hover {
   font-size: 1.5em;
   font-weight: 800;
 }
-#second .cart .text {
+#second .cart .tc_text {
   margin-top: 20px;
 }
-#second .cart .text p {
+#second .cart .tc_text p {
   font-family: "Visby CF", Sans-serif !important;
 }
 #second .cart .button {
@@ -2116,6 +2123,511 @@ section .navbarBottom ul li a:hover {
 }
 #second .cart .dayelse span {
   font-family: "Visby CF", Sans-serif !important;
+}
+
+#first_practice {
+  padding: 50px;
+}
+#first_practice .left .titles .first {
+  display: flex;
+  justify-content: center;
+}
+#first_practice .left .titles .first h2 {
+  font-size: 60px;
+  font-weight: 100;
+  text-transform: lowercase;
+  line-height: 50px;
+  text-align: center;
+}
+#first_practice .left .titles .second {
+  display: flex;
+  justify-content: center;
+}
+#first_practice .left .titles .second h2 {
+  font-size: 60px;
+  font-weight: 100;
+  text-transform: lowercase;
+  line-height: 50px;
+  text-align: center;
+}
+#first_practice .left .border_edu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 21px 0 21px 50px;
+}
+#first_practice .left .border_edu .line {
+  height: 4px;
+  width: 125px;
+  background-image: url(https://code.edu.az/wp-content/uploads/2021/07/sep-line.png);
+}
+#first_practice .left .text {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#first_practice .left .text p {
+  width: 75%;
+}
+#first_practice .image {
+  width: 100%;
+}
+#first_practice .image img {
+  width: 100%;
+}
+
+#first_detail_sc {
+  padding: 50px;
+}
+#first_detail_sc .image img {
+  width: 656px;
+  height: 437px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#first_detail_sc .title {
+  padding: 70px 40px;
+}
+#first_detail_sc .title .upper {
+  color: #4A4A4A;
+  font-family: visby cf, Sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+}
+#first_detail_sc .title .bottom {
+  color: #4A4A4A;
+  font-family: visby cf, Sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25em;
+  letter-spacing: -0.3px;
+}
+#first_detail_sc .blueDiv {
+  position: relative;
+  bottom: 108px;
+  left: 472px;
+  background-color: white;
+  padding: 40px;
+}
+#first_detail_sc .blueDiv .blue {
+  padding: 40px;
+  background-color: #2382c8;
+}
+#first_detail_sc .blueDiv .blue .titleBlue h4 {
+  font-size: 22px !important;
+  padding: 0;
+  color: white;
+  font-family: visby cf, Sans-serif;
+}
+#first_detail_sc .blueDiv .blue .textFirst {
+  line-height: 24px;
+  padding-top: 10px;
+  font-size: 15px;
+  font-family: visby cf, Sans-serif;
+}
+#first_detail_sc .blueDiv .blue .textFirst p {
+  color: white;
+}
+#first_detail_sc .blueDiv .blue .textSecond {
+  padding-top: 10px;
+  font-size: 15px;
+  font-family: visby cf, Sans-serif;
+  color: white;
+}
+
+#second {
+  padding: 0px !important;
+}
+#second .title {
+  display: flex;
+  justify-content: start;
+}
+#second .title h2 {
+  color: #4A4A4A;
+  font-family: visby cf, Sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+#second .text {
+  width: 417px;
+}
+#second .text p {
+  padding-top: 30px;
+  padding-left: 50px;
+  color: #4A4A4A;
+  font-family: visby cf, Sans-serif;
+}
+#second .images {
+  position: relative;
+  cursor: pointer;
+}
+#second .images:hover .bg {
+  opacity: 1;
+  pointer-events: auto;
+}
+#second .images:hover img {
+  transform: scale(1.2);
+}
+#second .images img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+#third {
+  background-color: #F4F5F8;
+}
+#third .title {
+  text-align: start;
+}
+#third .title .upper {
+  color: #4A4A4A;
+  font-family: visby cf, Sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: lowercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 42.5px;
+}
+#third .title .bottom {
+  color: #4A4A4A;
+  font-family: visby cf, Sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: lowercase;
+  line-height: 22.5px;
+  letter-spacing: -1.5px;
+}
+#third .image {
+  width: 100px;
+  height: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#third .image span {
+  display: inline-block;
+  width: 100px;
+  height: 4px;
+  background-color: #2382c8;
+}
+#third .text {
+  padding-top: 20px;
+  width: 215px;
+}
+#third .accordion {
+  border: none;
+  box-shadow: none;
+  background-color: #F4F5F8 !important;
+}
+#third .accordion .accordion-item {
+  border: none;
+  background-color: #F4F5F8 !important;
+}
+#third .accordion .accordion-item .accordion-header .accordion-button {
+  font-family: revert;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  color: rgba(50, 50, 50, 0.6196078431);
+  font-size: 24px;
+  background-color: transparent !important;
+  border: none !important;
+}
+#third .accordion .accordion-item .accordion-header .accordion-button:focus {
+  border: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+#third .accordion .accordion-item p {
+  font-size: 15px;
+}
+
+#teacher_all {
+  background-color: white;
+  padding-top: 50px;
+}
+#teacher_all .title .upper {
+  color: #4A4A4A;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: lowercase;
+  line-height: 1.04em;
+  letter-spacing: -1.5px;
+}
+#teacher_all .title .bottom {
+  color: #4A4A4A;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: lowercase;
+  line-height: 1.04em;
+  letter-spacing: -1.5px;
+}
+#teacher_all .images {
+  text-align: center;
+}
+#teacher_all .images .image img {
+  border-radius: 50%;
+  width: 191px;
+  height: 191px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#teacher_all .images .name {
+  padding-top: 10px;
+}
+#teacher_all .images .name h2 {
+  font-family: "Visby CF", Sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1.33em;
+}
+
+#certificate {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 330px;
+  background-color: #2382c8;
+}
+#certificate .title .upper {
+  color: white;
+  font-family: visby cf, Sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: lowercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 22.5px;
+  letter-spacing: -1.2px;
+}
+#certificate .title .bottom {
+  color: white;
+  font-family: visby cf, Sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: lowercase;
+  line-height: 22.5px;
+  letter-spacing: -1.5px;
+}
+#certificate .image {
+  width: 100px;
+  height: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#certificate .image span {
+  display: inline-block;
+  width: 100px;
+  height: 4px;
+  background-color: white;
+}
+#certificate .accordion {
+  border: none;
+  box-shadow: none;
+  background-color: transparent !important;
+}
+#certificate .accordion .accordion-item {
+  border: none;
+}
+#certificate .accordion .accordion-item .accordion-header .accordion-button {
+  font-family: revert;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  color: rgba(50, 50, 50, 0.6196078431);
+  font-size: 24px;
+  background-color: transparent !important;
+  border: none !important;
+}
+#certificate .accordion .accordion-item .accordion-header .accordion-button:focus {
+  border: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+#certificate .accordion .accordion-item p {
+  font-size: 15px;
+}
+
+#intro {
+  padding-top: 50px;
+}
+#intro .title-text {
+  text-align: center;
+}
+#intro .title-text .title .upper {
+  color: #4A4A4A;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: lowercase;
+  line-height: 1.04em;
+  letter-spacing: -1.5px;
+}
+#intro .title-text .bottom {
+  color: #4A4A4A;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: lowercase;
+  line-height: 1.04em;
+  letter-spacing: -1.5px;
+}
+#intro .text {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 474px;
+}
+#intro ul {
+  padding-top: 50px;
+}
+#intro ul li {
+  margin-left: 30px;
+  text-align: center;
+  list-style: none;
+}
+#intro ul li .pro_image img {
+  height: 63px;
+  width: 63px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#intro ul li .pro_title h3 {
+  font-family: "Lato", Sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 24px;
+}
+#intro ul li .pro_text {
+  width: 235px;
+  font-family: "Visby CF", Sans-serif !important;
+}
+
+#form {
+  padding-top: 50px;
+}
+#form .title {
+  text-align: center;
+}
+#form .title .upper {
+  color: #4A4A4A;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: lowercase;
+  line-height: 70px;
+  letter-spacing: -1.5px;
+}
+#form .title .bottom {
+  color: #4A4A4A;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: lowercase;
+  line-height: 70px;
+  letter-spacing: -1.2px;
+}
+#form .title img {
+  width: 104px;
+  height: 3px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#form ul {
+  padding-top: 50px;
+}
+#form ul li {
+  margin-left: 30px;
+  text-align: center;
+  list-style: none;
+}
+#form ul li .image img {
+  height: 131px;
+  width: 131px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#form ul li .title {
+  padding-top: 15px;
+}
+#form ul li .title h3 {
+  font-family: "Lato", Sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 24px;
+}
+#form ul li .text {
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 235px;
+  font-family: "Visby CF", Sans-serif !important;
+}
+
+#next {
+  padding: 50px;
+}
+#next .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#next .title .left {
+  color: #4A4A4A;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: lowercase;
+  line-height: 70px;
+  letter-spacing: -1.2px;
+}
+#next .title .right {
+  margin-left: 15px;
+  color: #4A4A4A;
+  font-family: "Visby CF", Sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: lowercase;
+  line-height: 70px;
+  letter-spacing: -1.2px;
+}
+#next .cart {
+  margin-top: 20px;
+  padding: 30px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#next .cart .text .upper {
+  font-family: "Visby CF", Sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 0.8em;
+}
+#next .cart .buttonMur a {
+  text-decoration: none;
+  color: #4A4A4A;
+  padding-top: 16px;
+  text-align: center;
+  font-weight: 700;
+  border: 1px solid black;
+  display: inline-block;
+  width: 179px;
+  height: 60px;
+  transition: 0.4s;
+}
+#next .cart .buttonMur a:hover {
+  border: none;
+  background-color: #EEEEEE;
 }
 
 body {

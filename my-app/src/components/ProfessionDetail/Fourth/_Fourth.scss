@@ -1,0 +1,54 @@
+#teacher_all {
+    background-color: white;
+    padding-top: 50px;
+
+    .title {
+        .upper {
+            color: #4A4A4A;
+
+            font-family: "Visby CF", Sans-serif;
+            font-size: 50px;
+            font-weight: 300;
+            text-transform: lowercase;
+            line-height: 1.04em;
+            letter-spacing: -1.5px;
+        }
+
+        .bottom {
+            color: #4A4A4A;
+
+            font-family: "Visby CF", Sans-serif;
+            font-size: 50px;
+            font-weight: 900;
+            text-transform: lowercase;
+            line-height: 1.04em;
+            letter-spacing: -1.5px;
+        }
+    }
+
+    .images {
+        text-align: center;
+
+        .image {
+            img {
+                border-radius: 50%;
+                width: 191px;
+                height: 191px;
+                object-fit: contain;
+            }
+        }
+
+        .name {
+            padding-top: 10px;
+
+            h2 {
+                font-family: "Visby CF", Sans-serif;
+                font-size: 21px;
+                font-weight: 800;
+                font-style: normal;
+                line-height: 1.33em;
+            }
+        }
+    }
+}
+ 

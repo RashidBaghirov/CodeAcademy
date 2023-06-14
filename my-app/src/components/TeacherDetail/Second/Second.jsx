@@ -1,5 +1,6 @@
 import React from "react";
 import "./_Second.scss";
+import { Link } from "react-router-dom";
 
 function Second() {
   return (
@@ -14,13 +15,13 @@ function Second() {
             <div className="name">
               <span>Fərdi</span>
             </div>
-            <div className="title">
+            <div className="tc_name">
               <h2>Full Stack Proqramlaşdırma</h2>
             </div>
             <div className="dayelse">
               <span>350 saat | Campus | Online Campus</span>
             </div>
-            <div className="text">
+            <div className="tc_text">
               <p>
                 Code Academy-də keçirilən Proqramlaşdırma üzrə tədris proqramı
                 sektorun ehtiyaclarını nəzərə alaraq hazırlanmışdır. Təhsilin
@@ -34,7 +35,7 @@ function Second() {
               </p>
             </div>
             <div className="button">
-              <a href="">Ətraflı</a>
+              <Link to="/professiondetail">Ətraflı</Link>
             </div>
           </div>
         </div>

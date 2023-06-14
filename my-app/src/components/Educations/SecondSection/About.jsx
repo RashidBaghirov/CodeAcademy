@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 
 function About({ imageSrc, titles, text,others }) {
@@ -17,9 +18,9 @@ function About({ imageSrc, titles, text,others }) {
             <p>{text}</p>
         </div>
         <div className="other">
-            <a href="">        
+            <Link style={{textDecoration:"none"}} to="/practice">        
                 {others} 
-            </a>
+            </Link>
         </div>
     </div>
 </div>

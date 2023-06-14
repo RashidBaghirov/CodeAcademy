@@ -1,0 +1,64 @@
+#next{
+    padding: 50px;
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .left{
+            color: #4A4A4A;
+
+            font-family: "Visby CF", Sans-serif;
+            font-size: 50px;
+            font-weight: 300;
+            text-transform: lowercase;
+            line-height: 70px;
+            letter-spacing: -1.2px;
+        }
+        .right{
+            margin-left: 15px;
+            color: #4A4A4A;
+
+            font-family: "Visby CF", Sans-serif;
+            font-size: 50px;
+            font-weight: 800;
+            text-transform: lowercase;
+            line-height: 70px;
+            letter-spacing: -1.2px;
+        }
+    }
+    .cart{
+        margin-top: 20px;
+        padding: 30px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .text{
+            .upper{
+                font-family: "Visby CF", Sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 0.8em;
+            }
+        }
+        .buttonMur{
+            a{
+                text-decoration: none;
+                color: #4A4A4A;
+                padding-top: 16px;
+                text-align: center;
+                font-weight: 700;
+                border: 1px solid black;
+                display: inline-block;
+                width: 179px;
+                height: 60px;
+                transition: .4s;
+                &:hover{
+                    border: none;
+                    background-color: #EEEEEE;
+                }
+            }
+        }
+    }
+}

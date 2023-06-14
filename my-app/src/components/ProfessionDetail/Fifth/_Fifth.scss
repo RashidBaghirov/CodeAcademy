@@ -1,0 +1,80 @@
+#certificate {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 330px;
+    background-color: #2382c8;
+
+    .title {
+        .upper {
+            color: white;
+            font-family: visby cf, Sans-serif;
+            font-size: 50px;
+            font-weight: 800;
+            text-transform: lowercase;
+            font-style: normal;
+            text-decoration: none;
+            line-height: 22.5px;
+            letter-spacing: -1.2px;
+        }
+
+        .bottom {
+            color: white;
+            font-family: visby cf, Sans-serif;
+            font-size: 50px;
+            font-weight: 300;
+            text-transform: lowercase;
+            line-height: 22.5px;
+            letter-spacing: -1.5px;
+        }
+    }
+
+    .image {
+
+        width: 100px;
+        height: 4px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        span {
+            display: inline-block;
+            width: 100px;
+            height: 4px;
+            background-color: white;
+        }
+    }
+
+    .accordion {
+        border: none;
+        box-shadow: none;
+        background-color: transparent !important;
+
+        .accordion-item {
+            border: none;
+
+            .accordion-header {
+                .accordion-button {
+                    font-family: revert;
+                    font-size: 18px;
+                    font-weight: 800;
+                    font-style: normal;
+                    color: #3232329e;
+                    font-size: 24px;
+                    background-color: transparent !important;
+                    border: none !important;
+                    &:focus{
+                    border: none !important;
+                        box-shadow: none !important;
+                        border-color: transparent !important;
+
+                    }
+                }
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,52 @@
+#second {
+  padding: 0px !important;
+
+    .title {
+      display: flex;
+      justify-content: start;
+        h2 {
+            color: #4A4A4A;
+
+            font-family: visby cf, Sans-serif;
+            font-size: 21px;
+            font-weight: 700;
+            text-transform: lowercase;
+        }
+    }
+
+    .text {
+        width: 417px;
+
+        p {
+            padding-top: 30px;
+            padding-left: 50px;
+            color: #4A4A4A;
+
+            font-family: visby cf, Sans-serif;
+        }
+    }
+
+    .images {
+        position: relative;
+        cursor: pointer;
+        &:hover {
+          .bg {
+            opacity: 1;
+            pointer-events: auto;
+          }
+      
+          img {
+            transform: scale(1.2);
+          }
+        }
+      
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+          transition: transform 0.3s ease-in-out;
+        }
+      }
+
+
+}

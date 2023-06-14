@@ -22,7 +22,7 @@ function Third(){
                     </div>
                 </div>
                 <div className="col-lg-6">
-                    <div cclassNameass="title-text">
+                    <div className="title-text">
                         <div className="title">
                             <h2 className="upper">
                                 Dizayn
