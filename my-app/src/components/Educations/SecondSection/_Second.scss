@@ -1,5 +1,5 @@
 
-#second {
+#edu_second {
     padding-top: 50px;
     .about {
         display: flex;
@@ -24,6 +24,10 @@
                 }
             }
             .text{
+                display: flex;
+                justify-content: start;
+                padding: 0 !important;
+                margin: 0 !important;
                 font-family: visby cf,Sans-serif!important;
                 margin-top: 10px;
                 color: #8b8b8b;
@@ -33,7 +37,6 @@
                 a{
                     color: black;
                     font-weight: 700;
-
                     font-family: visby cf,Sans-serif!important;
                     display: inline-block;
                     margin-top: 20px;

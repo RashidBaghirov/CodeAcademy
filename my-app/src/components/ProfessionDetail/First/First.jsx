@@ -29,7 +29,7 @@ function First() {
                             niyə code academy-də proqramlaşdırma təhsili?
                         </h4>
                     </div>
-                    <div clclassNameass="textFirst">
+                    <div className="textFirst">
                         <p>Code Academy-də keçirilən Proqramlaşdırma üzrə tədris proqramı sektorun ehtiyaclarını nəzərə alaraq hazırlanmışdır. Təhsilin 85%-i praktiki iş üzərində qurulmuşdur. Məqsəd sadəcə Proqramlaşdırmanın incəliklərini öyrətmək deyil, eyni zamanda müəssisələrin veb proqramlaşdırmaya olan ehtiyaclarını professional şəkildə qarşılayacaq mütəxəssislər yetişdirməkdir.</p>
                     </div>
                     <div className="textSecond">

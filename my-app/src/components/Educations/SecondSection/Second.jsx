@@ -5,7 +5,7 @@ import About from "./About";
 
 function Second() {
   return (
-    <section id="second">
+    <section id="edu_second">
     <div className="container">
         <div className="row gy-5 gx-5">
             <div className="col-lg-6">
