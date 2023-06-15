@@ -1,14 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { useParams } from "react-router-dom";
 import "./_First.scss";
 
 function First() {
+  const { id } = useParams();
+  const [modeDetail, setModeDetail] = useState(null);
+
+  useEffect(() => {
+    axios
+      .get(`https://localhost:7140/mode/${id}`)
+      .then((response) => {
+        setModeDetail(response.data);
+      })
+      .catch((error) => {
+        console.error("API request error:", error);
+      });
+  }, [id]);
+
+  if (!modeDetail) {
+    return <div>Loading...</div>;
+  }
+
+
   return (
     <section id="first">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
             <div className="title">
-              <h1>Proqramlaşdırma</h1>
+              <h1>{modeDetail.name}</h1>
             </div>
           </div>
           <div className="col-lg-6">
@@ -20,21 +41,12 @@ function First() {
                 />
               </div>
               <div className="text">
-                <p>
-                  Proqramlaşdırma müəyyən bir nəticəni əldə etmək və ya vəzifəni
-                  yerinə yetirmək üçün komputerə verilən icralar toplusudur.
-                  Sahə proqramlaşdırma dillərindən istifadə edərək alqortimlərin
-                  müəyyən edilməsi və tətbiqi kimi işləri özündə əhatə edir.
-                  Ümumilikdə, proqram yaratmaqla bağlı nəzəri və praktiki
-                  yaradıcılıq sahəsi proqramlaşdırmanın izahını tam olaraq əhatə
-                  edir. Siz də Code Academy-nin Proqramlaşdırma tədris
-                  proqramına müraciət edərək sahənin ixtisaslaşmış
-                  proqramçılarından birinə çevrilə bilərsiniz.
-                </p>
+                <p>{modeDetail.detail_Answer}</p>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );

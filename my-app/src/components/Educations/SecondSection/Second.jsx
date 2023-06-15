@@ -1,23 +1,40 @@
-import React from "react";
+import React,{useRef,useState,useEffect} from "react";
+
 import "./_Second.scss";
 import About from "./About";
 
 
 function Second() {
+  const [eduData, setEduData] = useState([]);
+
+  useEffect(() => {
+    fetch("https://localhost:7140/edu")
+      .then((response) => response.json())
+      .then((data) => {
+        setEduData(data);
+      })
+      .catch((error) => {
+        console.error("API request error:", error);
+      });
+  }, []);
+
   return (
     <section id="edu_second">
     <div className="container">
         <div className="row gy-5 gx-5">
-            <div className="col-lg-6">
-            <About
-            imageSrc="https://code.edu.az/wp-content/uploads/2021/08/layihe-teqdimatlari-300x300.jpg"
-            titles=" Buraxılış layihəsi"
-            text="Buraxılış layihəsi “Code Academy”dəki təhsilin yekun layihəsi hesab olunur və çox önəmli rol oynayır. Təqdimat təhsil boyunca keçirilən bütün mövzuları özündə cəmləyir. Buraxılış layihəsi tədrisi"
-            others="Ətraflı "
-            
-            />
-            </div>
-
+          {eduData.map((item)=>{
+              return(
+                <div className="col-lg-6">
+                <About
+                imageSrc={item.imageUrl}
+                titles={`${item.name_left} ${item.name_right}`}
+                text= {item.shortDesc.substring(0, 170)}
+                id={item.id}
+                />
+                </div>
+              );
+          })}
+{/* 
 
             <div className="col-lg-6">
             <About
@@ -69,7 +86,7 @@ function Second() {
             others="Ətraflı "
             
             />
-            </div>
+            </div> */}
         </div>
     </div>
 </section>

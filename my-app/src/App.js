@@ -32,10 +32,11 @@ function App() {
   <Route path="/education" element={<EducationModel />} />
   <Route path="/graduant" element={<GraduantsPage />} />
   <Route path="/graduantabout" element={<GraduantAbout />} />
-  <Route path="/profession" element={<Profession />} />
-  <Route path="/professiondetail" element={<ProfessionDetail />} />
+  <Route path="/profession/:id" element={<Profession />} />
+  <Route path="/professiondetail/:id" element={<ProfessionDetail />} />
   <Route path="/teacher" element={<Teaacher />} />
-  <Route path="/practice" element={<Practice />} />
+  <Route path="/practice/:id" element={<Practice />} />
+
 
 
 

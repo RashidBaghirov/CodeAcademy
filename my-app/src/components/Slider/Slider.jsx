@@ -7,6 +7,18 @@ import { Link } from 'react-router-dom';
 const MySlider = () => {
   const sliderRef = useRef(null);
   const [activeMenu, setActiveMenu] = useState(null);
+  const [sliderData, setSliderData] = useState([]);
+
+  useEffect(() => {
+    fetch('https://localhost:7140/slider')
+      .then(response => response.json())
+      .then(data => {
+        setSliderData(data);
+      })
+      .catch(error => {
+        console.error('API request error:', error);
+      });
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -19,6 +31,22 @@ const MySlider = () => {
       clearInterval(interval);
     };
   }, []);
+  const [modeData, setModeData] = useState([]);
+
+  useEffect(()=>{
+    fetch( 'https://localhost:7140/mode')
+    .then(response=>response.json())
+    .then(data=>{
+      setModeData(data)
+    })
+    .catch(error => {
+      console.error('API request error:', error);
+    });
+    
+  },[])
+
+
+
 
   const settings = {
     dots: false,
@@ -49,19 +77,12 @@ const MySlider = () => {
   return (
     <div className='container-fluid'>
       <div className="slider-wrapper">
-        <Slider {...settings} ref={sliderRef}>
-          <div>
-            <img className='w-100' src="/images/slider1.png" alt="Slide 1" />
-          </div>
-          <div>
-            <img className='w-100' src="/images/slider2.png" alt="Slide 2" />
-          </div>
-          <div>
-            <img className='w-100' src="/images/slider3.png" alt="Slide 3" />
-          </div>
-          <div>
-            <img className='w-100' src="/images/slider4.png" alt="Slide 4" />
-          </div>
+      <Slider {...settings} ref={sliderRef}>
+          {sliderData.map(slider => (
+            <div key={slider.id}>
+            <img className='w-100' src={`${slider.imageUrl}`} alt={slider.id} />
+            </div>
+          ))}
         </Slider>
         <div className="navbar">
           <div className='container'>
@@ -110,27 +131,14 @@ const MySlider = () => {
                     {activeMenu === 'tedris' && (
                       <div className="dropdown-menu">
                         <ul>
-                          <li>
-                          <Link style={{textDecoration:"none"}}  to="/profession">
-                            Digital Marketinq
-                            </Link>
-                          </li>
-                          <li>
-                          <Link style={{textDecoration:"none"}}  to="/profession">
-                          Proqramlaşdırma
-                            </Link>
-                        
-                          </li>
-                          <li>
-                          <Link style={{textDecoration:"none"}}  to="/profession">
-                            Dizayn
-                            </Link>
-                          </li>
-                          <li>
-                          <Link style={{textDecoration:"none"}}  to="/profession">
-                            İT və Kiber Təhlükəsizlik
-                            </Link>
-                          </li>
+                        {modeData.map((item) => (
+                             <li>
+                          <Link key={item.id} style={{textDecoration: "none"}} to={`/profession/${item.id}`}>
+
+                              {item.name}
+                               </Link>
+                             </li>
+                        ))}
                         </ul>
                       </div>
                     )}

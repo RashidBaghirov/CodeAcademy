@@ -1,23 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { useParams } from "react-router-dom";
 import "./_First.scss";
 
 function First() {
+    const { id } = useParams();
+    const [professionDetail, setprofessionDetail] = useState(null);
+  
+    useEffect(() => {
+      axios
+        .get(`https://localhost:7140/profession/${id}`)
+        .then((response) => {
+            setprofessionDetail(response.data);
+        })
+        .catch((error) => {
+          console.error("API request error:", error);
+        });
+    }, [id]);
+  
+    if (!professionDetail) {
+      return <div>Loading...</div>;
+    }
   return (
     <section id="first_detail_sc">
     <div className="container">
         <div className="row">
             <div className="col-lg-6">
                 <div className="image">
-                    <img src="https://code.edu.az/wp-content/uploads/2021/08/proqram-1536x1024.jpg" alt="" />
+                    <img src={professionDetail.educationMode.detailImage} alt="" />
                 </div>
             </div>
             <div className="col-lg-6">
                 <div className="title">
                     <h2 className="upper">
-                        Full Stack Proqramlaşdırma
+                        {professionDetail.name}
                     </h2>
                     <h2 className="bottom">
-                        #KodBurada
+                    {professionDetail.educationMode.hastage}
                     </h2>
                 </div>
             </div>
@@ -26,14 +45,14 @@ function First() {
                 <div className="blue">
                     <div className="titleBlue">
                         <h4 >
-                            niyə code academy-də proqramlaşdırma təhsili?
+                        {professionDetail.educationMode.detail_Questions}
                         </h4>
                     </div>
                     <div className="textFirst">
-                        <p>Code Academy-də keçirilən Proqramlaşdırma üzrə tədris proqramı sektorun ehtiyaclarını nəzərə alaraq hazırlanmışdır. Təhsilin 85%-i praktiki iş üzərində qurulmuşdur. Məqsəd sadəcə Proqramlaşdırmanın incəliklərini öyrətmək deyil, eyni zamanda müəssisələrin veb proqramlaşdırmaya olan ehtiyaclarını professional şəkildə qarşılayacaq mütəxəssislər yetişdirməkdir.</p>
+                        <p> {professionDetail.educationMode.detail_Answer}</p>
                     </div>
                     <div className="textSecond">
-                        Code Academy-nin Zəmanətli Təhsil Modeli ilə hər bir tələbəyə təhsilini təkrarlama imkanı verilir. Mövzuların praktiki tətbiqinin dərhal həyata keçirilməsi üçün hər bir tələbə sinifdaxili kompüterlərlə təmin olunur. Tələbələrin Veb Proqramlaşdırma təhsili boyunca öyrəndiklərini təkrar etmələrini və gücləndirmələrini təmin etmək məqsədilə tədris proqramı Code Academy-nin özünəməxsus Mentor Sistemi ilə təkmilləşdirilmişdir.
+                    {professionDetail.educationMode.detail_Desc}
                     </div>
                </div>
               </div>

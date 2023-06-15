@@ -1,24 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./_Second.scss";
 import TypeOfEducation from "./TypeofEducation";
 
 function Second() {
+  const [cateData, setCateData] = useState([]);
+
+  useEffect(() => {
+    fetch("https://localhost:7140/cate")
+      .then((response) => response.json())
+      .then((data) => {
+        setCateData(data);
+      })
+      .catch((error) => {
+        console.error("API request error:", error);
+      });
+  }, []);
+
+  if (!cateData) {
+    return <div>Not Found...</div>;
+  }
   return (
     <section id="second">
       <div className="container">
         <div className="row gx-0">
-          <div className="col-lg-6">
-            <TypeOfEducation
-              title="Fərdi"
-              text="Code Academy-də keçirilən Proqramlaşdırma üzrə tədris proqramı sektorun ehtiyaclarını nəzərə alaraq hazırlanmışdır..."
-            />
-          </div>
-          <div className="col-lg-6">
-            <TypeOfEducation
-              title="Korporativ"
-              text="Digital transformasiya dövründə xidmətlərin sürətli, təhlükəsiz və davamlı şəkildə göstərilməsini təmin edən peşəkar.."
-            />
-          </div>
+            {cateData.map((data=>{
+              return(
+                <div className="col-lg-6">
+                <TypeOfEducation
+                  title={data.name}
+                  text={data.desc}
+                />
+              </div>
+              );
+        }))}
         </div>
       </div>
     </section>

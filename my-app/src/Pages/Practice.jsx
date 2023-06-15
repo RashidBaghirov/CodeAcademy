@@ -12,11 +12,7 @@ function Practice() {
        <Header />
        <AllHeader />
        <First />
-
-
         <Footer />
-        
-  
       </div>
     );
   }

@@ -1,7 +1,21 @@
-import React from "react";
+import React,{useRef,useState,useEffect} from "react";
 import "./_EducationsArea.scss";
 
 function EducationsArea() {
+  const modeRef = useRef(null);
+  const [modeData, setModeData] = useState([]);
+
+  useEffect(()=>{
+    fetch( 'https://localhost:7140/mode')
+    .then(response=>response.json())
+    .then(data=>{
+      setModeData(data)
+    })
+    .catch(error => {
+      console.error('API request error:', error);
+    });
+    
+  },[])
   return (
     <section id="educations">
       <div className="mt-5">
@@ -28,48 +42,20 @@ function EducationsArea() {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="row">
-                <div className="col-lg-6">
-                  <div className="edu_category">
-                    <div className="images">
-                      <img src="/images/digital.png" />
-                    </div>
-                    <div className="edu_title">
-                      <h4>Digital Marketing</h4>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="edu_category">
-                    <div className="images">
-                      <img src="/images/design.png" />
-                    </div>
-                    <div className="edu_title">
-                      <h4>Dizayn</h4>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="edu_category">
-                    <div className="images">
-                      <img src="/images/cyber.png" />
-                    </div>
-                    <div className="edu_title">
-                      <h4>Kiber Təhlükəsizlik</h4>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="edu_category">
-                    <div className="images">
-                      <img src="/images/programing.png" />
-                    </div>
-                    <div className="edu_title">
-                      <h4>Proqramlaşdırma</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="row">
+  {modeData.map((item) => (
+    <div className="col-lg-6" key={item.id}>
+      <div className="edu_category">
+        <div className="images">
+          <img src={item.imageUrl} alt={item.name} />
+        </div>
+        <div className="edu_title">
+          <h4>{item.name}</h4>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
             </div>
           </div>
         </div>

@@ -29,9 +29,7 @@ function Accordion({ title, content, index }) {
         data-bs-parent="#accordionExample"
       >
         <div className="accordion-body">
-          {content.map((item, index) => (
-            <p key={index}>{item}</p>
-          ))}
+          <p>{content}</p>
         </div>
       </div>
     </div>
@@ -39,4 +37,3 @@ function Accordion({ title, content, index }) {
 }
 
 export default Accordion;
-

@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
 import "./_Footer.scss";
 import { Link } from "react-router-dom";
 
 function Footer() {
+  const [modeData, setModeData] = useState([]);
+
+  useEffect(() => {
+    fetch("https://localhost:7140/mode")
+      .then((response) => response.json())
+      .then((data) => {
+        setModeData(data);
+      })
+      .catch((error) => {
+        console.error("API request error:", error);
+      });
+  }, []);
   return (
     <footer className="footer">
       <div className="container-fluid">
@@ -22,9 +35,6 @@ function Footer() {
                   <Link style={{ textDecoration: "none" }} to="/akademi">
                     <a>Akademik Partnyorlar</a>
                   </Link>
-                </li>
-                <li>
-                  <a>Aktiv Vakansiyallar</a>
                 </li>
                 <li>
                   <a>
@@ -50,26 +60,16 @@ function Footer() {
             <div className="footer_ul">
               <h4>Tədris sahələri</h4>
               <ul>
-                <li>
-                  <Link style={{ textDecoration: "none" }} to="/profession">
-                    Digital Marketinq
-                  </Link>
-                </li>
-                <li>
-                  <Link style={{ textDecoration: "none" }} to="/profession">
-                    Proqramlaşdırma
-                  </Link>
-                </li>
-                <li>
-                  <Link style={{ textDecoration: "none" }} to="/profession">
-                    Dizayn
-                  </Link>
-                </li>
-                <li>
-                  <Link style={{ textDecoration: "none" }} to="/profession">
-                    İT və Kiber Təhlükəsizlik
-                  </Link>
-                </li>
+                {modeData.map((item) => (
+                  <li key={item.id}>
+                    <Link
+                      style={{ textDecoration: "none" }}
+                      to={`/profession/${item.id}`}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

@@ -1,9 +1,27 @@
-import React, { useContext } from "react";
-import { AppContext } from "../../../context/AppContext";
-import Cart from "./Cart";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Third() {
-  const { educationData } = useContext(AppContext);
+  const { id } = useParams();
+  const [modeDetail, setModeDetail] = useState(null);
+
+  useEffect(() => {
+    axios
+      .get(`https://localhost:7140/mode/${id}`)
+      .then((response) => {
+        setModeDetail(response.data);
+      })
+      .catch((error) => {
+        console.error("API request error:", error);
+      });
+  }, [id]);
+
+  if (!modeDetail) {
+    return <div>Loading...</div>;
+  }
+
 
   return (
     <section id="education">
@@ -23,15 +41,30 @@ function Third() {
             <label htmlFor="ferdi">Fərdi</label>
           </form>
 
-          {educationData.map((data) => (
-            <div className="col-lg-12" key={data.title}>
-              <Cart
-                educationName={data.educationName}
-                title={data.title}
-                text={data.text}
-                day={data.day}
-                id={data.id}
-              />
+          {modeDetail && modeDetail.professions.map((data) => (
+            <div className="col-lg-12" key={data.id}>
+              <div className="cart">
+                <div className="name">
+                  {/* <span>{modeDetail.category.name}</span> */}
+                </div>
+                <div className="title">
+                  <h2>{data.name}​</h2>
+                </div>
+                <div className="text">
+                  <p>{modeDetail.others.substring(0, 200) + "..."}</p>
+                </div>
+                <div className="button">
+                  <Link
+                    style={{ textDecoration: "none" }}
+                    to={`/professiondetail/${data.id}`}
+                  >
+                    Ətraflı
+                  </Link>
+                </div>
+                <div className="day">
+                  <span>3 Gün| OnSite | InClass</span>
+                </div>
+              </div>
             </div>
           ))}
         </div>
