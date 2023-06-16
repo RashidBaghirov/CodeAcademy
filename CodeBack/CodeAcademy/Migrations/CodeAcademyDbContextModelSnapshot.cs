@@ -68,6 +68,36 @@ namespace CodeAcademy.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("CodeAcademy.Entities.Cource", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("CourceDay")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Date")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("EducationModeId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EducationModeId");
+
+                    b.ToTable("Cources");
+                });
+
             modelBuilder.Entity("CodeAcademy.Entities.EducationMode", b =>
                 {
                     b.Property<int>("Id")
@@ -152,6 +182,64 @@ namespace CodeAcademy.Migrations
                     b.ToTable("EduModels");
                 });
 
+            modelBuilder.Entity("CodeAcademy.Entities.Graduant", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Answer1")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Answer2")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Answer3")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Answer4")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Company")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("EducationModeId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Position")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Sentence")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SurName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EducationModeId");
+
+                    b.ToTable("Graduants");
+                });
+
             modelBuilder.Entity("CodeAcademy.Entities.ModePhotos", b =>
                 {
                     b.Property<int>("Id")
@@ -172,6 +260,31 @@ namespace CodeAcademy.Migrations
                     b.HasIndex("EducationModeId");
 
                     b.ToTable("ModePhotos");
+                });
+
+            modelBuilder.Entity("CodeAcademy.Entities.Partnyor", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Desc")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Partnyors");
                 });
 
             modelBuilder.Entity("CodeAcademy.Entities.Profession", b =>
@@ -263,6 +376,28 @@ namespace CodeAcademy.Migrations
                     b.Navigation("Profession");
                 });
 
+            modelBuilder.Entity("CodeAcademy.Entities.Cource", b =>
+                {
+                    b.HasOne("CodeAcademy.Entities.EducationMode", "EducationMode")
+                        .WithMany("Cources")
+                        .HasForeignKey("EducationModeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("EducationMode");
+                });
+
+            modelBuilder.Entity("CodeAcademy.Entities.Graduant", b =>
+                {
+                    b.HasOne("CodeAcademy.Entities.EducationMode", "EducationMode")
+                        .WithMany("Graduants")
+                        .HasForeignKey("EducationModeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("EducationMode");
+                });
+
             modelBuilder.Entity("CodeAcademy.Entities.ModePhotos", b =>
                 {
                     b.HasOne("CodeAcademy.Entities.EducationMode", "EducationMode")
@@ -311,6 +446,10 @@ namespace CodeAcademy.Migrations
 
             modelBuilder.Entity("CodeAcademy.Entities.EducationMode", b =>
                 {
+                    b.Navigation("Cources");
+
+                    b.Navigation("Graduants");
+
                     b.Navigation("ModePhotos");
 
                     b.Navigation("Professions");

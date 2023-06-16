@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Other({image,name,surname,speciality}) {
+function Other({image,name,surname,speciality,id}) {
     return(
         <li>
         <div className="image">
-            <img src={image} alt="" />
+          <Link  style={{textDecoration:"none"}}  to={`/graduantabout/${id}`}>
+          <img src={image} alt="" />
+          </Link>
         </div>
         <div className="aboutPerson">
             <span className="name">

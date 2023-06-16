@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { useParams } from "react-router-dom";
 import './_Second.scss';
 import Left from "./Left";
 
 function Second(){
+    const { id } = useParams();
+    const [graduantDetail, setgraduantDetail] = useState(null);
+  
+    useEffect(() => {
+      axios
+        .get(`https://localhost:7140/graduant/${id}`)
+        .then((response) => {
+            setgraduantDetail(response.data);
+        })
+        .catch((error) => {
+          console.error("API request error:", error);
+        });
+    }, [id]);
+  
+    if (!graduantDetail) {
+      return <div>Loading...</div>;
+    }
     return(
         <section id="second">
         <div className="container">
@@ -14,23 +33,23 @@ function Second(){
                 </div>
                 <Left 
                 image="https://code.edu.az/wp-content/uploads/elementor/thumbs/sep-line-pay4h4cd32a9vtdz9i6ps4iyobet29ugektausv76m.png"
-               answer="İxtisasım – Sənayenin Təşkili və İdarə edilməsidir. 6 ildir ekstrim idman növləri üzrə xilasedici mütəxəssis kimi fəalliyyət göstərirdim. Hələ də hobbi kimi davam etdirirəm."
+               answer={graduantDetail.answer1}
                 question="Tədrisə qədər peşəniz"
                 />
                      <Left 
                 image="https://code.edu.az/wp-content/uploads/elementor/thumbs/sep-line-pay4h4cd32a9vtdz9i6ps4iyobet29ugektausv76m.png"
-               answer="     Ətraf mühitdə yaxınlarımın məsləhəti və təklifi ilə Code Academy-ni seçmək qərarına gəldim. Əlavə olaraq təhsildə keyfiyyətə önəm verdiklərini bildiyim üçün müraciət etdim."
-                question=" Code Academy-ni seçməkdə qərarınıza təsir edən amillər hansılar olub?"
+                answer={graduantDetail.answer2}
+               question=" Code Academy-ni seçməkdə qərarınıza təsir edən amillər hansılar olub?"
                 />
                            <Left 
                 image="https://code.edu.az/wp-content/uploads/elementor/thumbs/sep-line-pay4h4cd32a9vtdz9i6ps4iyobet29ugektausv76m.png"
-               answer=" Məzun olduqdan sonra pandemiya səbəbli çətinliklərin yaranmasıyla bağlı iş imkanları azalsada Code Academy-də aldığım təhsilin mənə yaratdığı üstünlüklər nəticəsində iş tapmağım o qədərdə çətin olmadı."
-                question=" Məzun olduqdan sonra yeni iş imkanları və karyera fürsətləri haqqında nə deyə bilərsiniz?"
+                answer={graduantDetail.answer3}
+              question=" Məzun olduqdan sonra yeni iş imkanları və karyera fürsətləri haqqında nə deyə bilərsiniz?"
                 />
                      <Left 
                 image="https://code.edu.az/wp-content/uploads/elementor/thumbs/sep-line-pay4h4cd32a9vtdz9i6ps4iyobet29ugektausv76m.png"
-               answer=" Code Academy ailəsinin peşəkarlığı və keçirilən təhsilin yüksək səviyyədə olmasının nəticəsində gələcək iş həyatında bir çox üstünlüklərə sahib ola bilərlər. Təbii ki, Code ailəsinin səyləri ilə bərabər tələbələrin üzərinə düşən vəzifələri və tapşırıqları vaxtı vaxtında yerinə yetirmələri əldə ediləcək uğurun təminatının bir hissəsidir."
-                question=" Code Academy-də yeni tələbə olanlara və ya gələcəkdə tələbə olmaq istəyənlərə hansı tövsiyələri edərdin?"
+                answer={graduantDetail.answer4}
+              question=" Code Academy-də yeni tələbə olanlara və ya gələcəkdə tələbə olmaq istəyənlərə hansı tövsiyələri edərdin?"
                 />
             </div>
         </div>

@@ -152,7 +152,7 @@
 }
 .container-fluid .slider-wrapper .navbar nav ul li .dropdown-menu {
   position: absolute;
-  top: 97%;
+  top: 23px;
   left: 0;
   background-color: white;
   padding: 10px;
@@ -165,12 +165,16 @@
   display: block;
 }
 .container-fluid .slider-wrapper .navbar nav ul li .dropdown-menu ul li {
-  padding: 5px;
   margin-bottom: 10px;
-  text-align: center;
+  text-align: start;
 }
 .container-fluid .slider-wrapper .navbar nav ul li .dropdown-menu ul li a {
-  color: black;
+  color: #00AA49;
+  transition: 0.5s all;
+}
+.container-fluid .slider-wrapper .navbar nav ul li .dropdown-menu ul li a:hover {
+  color: #7A0F9A;
+  transition: 0.5s all;
 }
 .container-fluid .slider-wrapper .navbar nav ul li:hover .dropdown-menu {
   display: block;
@@ -229,6 +233,9 @@
 }
 #educations .edu_category:hover {
   transform: scale(1.1);
+}
+#educations .edu_category:hover .edu_title {
+  color: #00AA49;
 }
 
 #why {
@@ -495,16 +502,73 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: 3s all;
 }
 #graduate .graduates .graduates_image {
   width: 172px;
   height: 174px;
+  position: relative;
 }
 #graduate .graduates .graduates_image img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  position: absolute;
+  transition: transform 0.5s;
+  transform: rotate(0deg);
+}
+#graduate .graduates .graduates_image .abouts {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#graduate .graduates .graduates_image .abouts .grd_bg {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://media.licdn.com/dms/image/C4E0BAQGFOSpfuGFKAA/company-logo_200_200/0/1659427633271?e=2147483647&v=beta&t=uvR6N6nqS46xl1RIwbLC8IvJXlDnzpW_H5Oafjfsf9g");
+  background-size: cover;
+}
+#graduate .graduates .graduates_image .abouts .grd_bg p {
+  font-size: 15px;
+  font-family: unset;
+  color: #00AA49;
+}
+#graduate .graduates .graduates_image:hover img {
+  animation: collapse 1s forwards;
+}
+#graduate .graduates .graduates_image:hover .abouts {
+  opacity: 1;
+}
+#graduate .graduates .graduates_image:not(:hover) img {
+  animation: reverse-collapse 1s forwards;
+}
+#graduate .graduates .graduates_image:not(:hover) .abouts {
+  opacity: 0;
+}
+@keyframes collapse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotateY(180deg) translateY(100%);
+    opacity: 0;
+  }
+}
+@keyframes reverse-collapse {
+  0% {
+    transform: rotateY(180deg) translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
 }
 
 .allhead {
@@ -554,7 +618,7 @@
 }
 .allhead .navbar nav ul li .dropdown-menu {
   position: absolute;
-  top: 90%;
+  top: 23px;
   left: 0;
   background-color: white;
   padding: 10px;
@@ -567,12 +631,16 @@
   display: block;
 }
 .allhead .navbar nav ul li .dropdown-menu ul li {
-  padding: 5px;
   margin-bottom: 10px;
-  text-align: center;
+  text-align: start;
 }
 .allhead .navbar nav ul li .dropdown-menu ul li a {
-  color: black;
+  color: #00AA49;
+  transition: 0.5s all;
+}
+.allhead .navbar nav ul li .dropdown-menu ul li a:hover {
+  color: #7A0F9A;
+  transition: 0.5s all;
 }
 .allhead .navbar nav ul li:hover .dropdown-menu {
   display: block;
@@ -1752,7 +1820,7 @@ section .navbarBottom ul li a:hover {
   font-size: 60px;
   font-weight: 300;
 }
-#third .title-text .text p {
+#third .title-text .text_detail p {
   color: #aaaaaa;
   margin: 30px 0px 0px 50px;
 }

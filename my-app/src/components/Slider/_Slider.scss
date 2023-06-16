@@ -63,31 +63,39 @@
                             }
                         }
 
+                   
                         .dropdown-menu {
                             position: absolute;
-                            top: 97%;
+                            top: 23px;
                             left: 0;
                             background-color: white;
                             padding: 10px;
                             display: none;
                             transition: 0.3s all;
-
+    
                             ul {
                                 list-style: none;
                                 padding: 0;
                                 display: block;
-
+    
                                 li {
-                                    padding: 5px;
                                     margin-bottom: 10px;
-                                    text-align: center;
-
+                                    text-align: start;
+    
                                     a {
-                                        color: black;
+                                        color:#00AA49;
+                                        transition: 0.5s all;
+                                        &:hover{
+                                          color: #7A0F9A;
+                                        transition: 0.5s all;
+
+                                        }
                                     }
+                                    
                                 }
                             }
                         }
+    
 
                         &:hover {
                             .dropdown-menu {

@@ -1,43 +1,61 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { useParams } from "react-router-dom";
 import "./_Second.scss";
 import { Link } from "react-router-dom";
 
 function Second() {
+  const { id } = useParams();
+  const [teacherDetail, setteacherDetail] = useState(null);
+
+  useEffect(() => {
+    axios
+      .get(`https://localhost:7140/teacher/${id}`)
+      .then((response) => {
+          setteacherDetail(response.data);
+      })
+      .catch((error) => {
+        console.error("API request error:", error);
+      });
+  }, [id]);
+
+  if (!teacherDetail) {
+    return <div>Loading...</div>;
+  }
   return (
     <section id="second">
       <div className="container">
         <div className="row">
           <div className="titleCart">
-            <h1>Proqramlaşdırma Tədris Proqramları</h1>
+            <h1>{teacherDetail.educationMode.name} Tədris Proqramları</h1>
           </div>
 
-          <div className="cart col-8">
-            <div className="name">
-              <span>Fərdi</span>
+    
+          
+          {teacherDetail && teacherDetail.educationMode.professions.map((data) => (
+            <div className="cart col-8" key={data.id}>
+                <div className="name">
+                  {/* <span>{modeDetail.category.name}</span> */}
+                </div>
+                <div className="tc_name">
+                  <h2>{data.name}​</h2>
+                </div>
+                <div className="text">
+                  <p>{teacherDetail.educationMode.others.substring(0, 200) + "..."}</p>
+                </div>
+                <div className="button">
+                  <Link
+                    style={{ textDecoration: "none" }}
+                    to={`/professiondetail/${data.id}`}
+                  >
+                    Ətraflı
+                  </Link>
+                </div>
+                <div className="day">
+                  <span>3 Gün| OnSite | InClass</span>
+                </div>
             </div>
-            <div className="tc_name">
-              <h2>Full Stack Proqramlaşdırma</h2>
-            </div>
-            <div className="dayelse">
-              <span>350 saat | Campus | Online Campus</span>
-            </div>
-            <div className="tc_text">
-              <p>
-                Code Academy-də keçirilən Proqramlaşdırma üzrə tədris proqramı
-                sektorun ehtiyaclarını nəzərə alaraq hazırlanmışdır. Təhsilin
-                85%-i praktiki iş üzərində qurulmuşdur. Məqsəd sadəcə
-                Proqramlaşdırmanın incəliklərini öyrətmək deyil, eyni zamanda
-                müəssisələrin veb proqramlaşdırmaya olan ehtiyaclarını
-                professional şəkildə qarşılayacaq mütəxəssislər yetişdirməkdir.
-                Code Academy-nin Zəmanətli Təhsil Modeli ilə hər bir tələbəyə
-                təhsilini təkrarlama imkanı verilir. Mövzuların praktiki
-                tətbiqinin dərhal həyata keçirilməsi […]​
-              </p>
-            </div>
-            <div className="button">
-              <Link to="/professiondetail">Ətraflı</Link>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

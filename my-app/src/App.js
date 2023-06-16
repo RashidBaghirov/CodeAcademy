@@ -31,10 +31,10 @@ function App() {
   <Route path="/about" element={<About />} />
   <Route path="/education" element={<EducationModel />} />
   <Route path="/graduant" element={<GraduantsPage />} />
-  <Route path="/graduantabout" element={<GraduantAbout />} />
+  <Route path="/graduantabout/:id" element={<GraduantAbout />} />
   <Route path="/profession/:id" element={<Profession />} />
   <Route path="/professiondetail/:id" element={<ProfessionDetail />} />
-  <Route path="/teacher" element={<Teaacher />} />
+  <Route path="/teacher/:id" element={<Teaacher />} />
   <Route path="/practice/:id" element={<Practice />} />
 
 

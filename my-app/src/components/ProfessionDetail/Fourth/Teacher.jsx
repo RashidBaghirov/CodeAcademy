@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Teacher({ image, fullname }) {
+function Teacher({ image, fullname,id }) {
   return (
   
     <div className="images col-lg-4">
       <div className="image">
-      <Link style={{textDecoration:"none"}} to="/teacher" className="teacher_href">
+      <Link style={{textDecoration:"none"}}  to={`/teacher/${id}`} className="teacher_href">
         <img src={image} alt="" />
   </Link>
 

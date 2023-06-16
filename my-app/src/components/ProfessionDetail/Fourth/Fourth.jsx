@@ -36,7 +36,7 @@ function Fourth() {
             <div className="col-lg-9">
               <div className="row">
               {professionDetail &&  professionDetail.educationMode.teachers.map((item) => (
-                  <Teacher image={item.image} fullname={`${item.name} ${item.surName}`} />
+                  <Teacher id={item.id} image={item.image} fullname={`${item.name} ${item.surName}`} />
                 ))}
               </div>
             </div>

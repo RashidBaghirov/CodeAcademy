@@ -1,28 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { useParams } from "react-router-dom";
 import "./_Eighth.scss";
 import Cart_Cource from "./Cart_Cource";
 
 
 function Eighth(){
-    const newcourses=[
-        {
-            date:" 5 iyun",
-            courcename:"Full Stack Proqramlaşdırma",
-            courseday:" I-IV günlər Saat: 19:00-21:45 Tədris forması: Campus | Online Campus"
-        },
-        {
-            date:" 3 iyul",
-            courcename:"Full Stack Proqramlaşdırma",
-            courseday:" I-IV günlər Saat: 9:00-12:45 Tədris forması: Campus | Online Campus"
-        },
-    ]
+    const { id } = useParams();
+    const [professionDetail, setprofessionDetail] = useState(null);
+  
+    useEffect(() => {
+      axios
+        .get(`https://localhost:7140/profession/${id}`)
+        .then((response) => {
+          setprofessionDetail(response.data);
+        })
+        .catch((error) => {
+          console.error("API request error:", error);
+        });
+    }, [id]);
+  
+    if (!professionDetail) {
+      return <div>Loading...</div>;
+    }
     return(
         <section id="next">
         <div className="container">
             <div className="row">
                 <div className="title">
                     <h2 className="left">
-                        növbəti
+                       {professionDetail.educationMode.name}-də növbəti
 
                     </h2>
                     <h2 className="right">
@@ -30,8 +37,8 @@ function Eighth(){
                     </h2>
                 </div>
           
-                {newcourses.map((item) => (
-                  <Cart_Cource date={item.date} courcename={item.courcename} courseday={item.courseday} />
+                {professionDetail && professionDetail.educationMode.cources.map((item) => (
+                  <Cart_Cource date={item.date} courcename={item.name} courseday={item.courceDay} />
                 ))}
 
             </div>
