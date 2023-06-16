@@ -14,7 +14,7 @@ function FirstSection() {
     position: "",
     employeeCount: "",
     additionalInfo: "",
-    prefix: "010" // Varsayılan prefix değeri
+    prefix: "010"
   });
 
   const handleChange = (e) => {

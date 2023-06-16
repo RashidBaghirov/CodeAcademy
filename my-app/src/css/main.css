@@ -1954,26 +1954,6 @@ section .navbarBottom ul li a:hover {
 #second .firstCart .text p {
   font-family: "Visby CF", Sans-serif !important;
 }
-#second .firstCart .button a {
-  position: absolute;
-  bottom: 20px;
-  margin-top: 75px;
-  width: 138px;
-  height: 60px;
-  background-color: #2382C8;
-  border-color: #2382C8;
-  text-align: center;
-  transition: 0.5s;
-  padding-top: 17px;
-  color: white;
-  font-family: "Visby CF", Sans-serif !important;
-  display: inline-block;
-  text-decoration: none;
-}
-#second .firstCart .button a:hover {
-  background-color: #818a91;
-  color: #4a4a4a;
-}
 
 #education {
   padding: 50px;
@@ -2682,6 +2662,93 @@ section .navbarBottom ul li a:hover {
 #next .cart .buttonMur a:hover {
   border: none;
   background-color: #EEEEEE;
+}
+
+#result {
+  padding: 50px;
+}
+#result .titles .first {
+  display: flex;
+  justify-content: start;
+}
+#result .titles .first h2 {
+  font-size: 60px;
+  font-weight: 100;
+  text-transform: lowercase;
+  line-height: 50px;
+  text-align: start;
+}
+#result .titles .second {
+  display: flex;
+  justify-content: start;
+}
+#result .titles .second h2 {
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: lowercase;
+  line-height: 50px;
+  text-align: start;
+}
+#result .border_edu {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 21px 0 21px 50px;
+}
+#result .border_edu .line {
+  height: 4px;
+  width: 125px;
+  background-image: url(https://code.edu.az/wp-content/uploads/2021/07/sep-line.png);
+}
+
+#search_result {
+  padding: 50px;
+}
+#search_result .searchcart {
+  margin-top: 40px;
+  border: 1px solid black;
+  padding: 20px;
+}
+#search_result .searchcart .name span {
+  font-family: "Visby CF", Sans-serif !important;
+}
+#search_result .searchcart .title {
+  margin-top: 20px;
+}
+#search_result .searchcart .title h2 {
+  font-family: "Visby CF", Sans-serif !important;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+#search_result .searchcart .text {
+  margin-top: 20px;
+}
+#search_result .searchcart .text p {
+  font-family: "Visby CF", Sans-serif !important;
+}
+#search_result .searchcart .button a {
+  margin-top: 20px;
+  width: 138px;
+  height: 60px;
+  background-color: #872891;
+  border-color: #872891;
+  text-align: center;
+  transition: 0.5s;
+  padding-top: 17px;
+  color: white;
+  font-family: "Visby CF", Sans-serif !important;
+  display: inline-block;
+  text-decoration: none;
+}
+#search_result .searchcart .button a:hover {
+  background-color: #818a91;
+  color: #4a4a4a;
+}
+#search_result .searchcart .dayelse {
+  margin-top: 20px;
+}
+#search_result .searchcart .dayelse span {
+  font-family: "Visby CF", Sans-serif !important;
 }
 
 body {

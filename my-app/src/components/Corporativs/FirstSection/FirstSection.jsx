@@ -15,7 +15,7 @@ function FirstSection() {
                 </p>
             </div>
             <div className="navigation">
-                <a href="">
+                <a href="#Contact">
                     Müraciət edin
                 </a>
             </div>

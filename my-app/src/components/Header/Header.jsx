@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap';
-import './_Header.scss';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
 function Header() {
   const [showModal, setShowModal] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const navigate = useNavigate();
 
   const handleModalOpen = () => {
     setShowModal(true);
@@ -13,15 +15,30 @@ function Header() {
     setShowModal(false);
   };
 
+  const handleSearchInputChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  const handleSearch = () => {
+    if (searchQuery) {
+      const url = `/result?search=${searchQuery}`;
+      navigate(url);
+    }
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleSearch();
+    }
+  };
+
   return (
     <header className="header">
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-4 d-flex justify-content-center align-items-center">
             <div className="address">
-              <p>
-                Nizami küçəsi 203B, AF Business House, 2-ci mərtəbə (+994 12) 310 0113
-              </p>
+              <p>Nizami küçəsi 203B, AF Business House, 2-ci mərtəbə (+994 12) 310 0113</p>
             </div>
           </div>
           <div className="col-lg-4 d-flex justify-content-center align-items-center">
@@ -64,14 +81,22 @@ function Header() {
           </div>
         </div>
       </div>
-      <Modal show={showModal} onHide={handleModalClose}  className="custom-modal">
+      <Modal show={showModal} onHide={handleModalClose} className="custom-modal">
         <Modal.Header closeButton>
           <Modal.Title>
             <img src="images/logofoot.png" alt="CodeAcademy Logo" className="modal-logo" />
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <input placeholder="Axtar" style={{ boxShadow: 'none' }} className="form-control search_input" type="search" />
+          <input
+            placeholder="Axtar"
+            style={{ boxShadow: 'none' }}
+            className="form-control search_input"
+            type="search"
+            value={searchQuery}
+            onChange={handleSearchInputChange}
+            onKeyPress={handleKeyPress}
+          />
         </Modal.Body>
       </Modal>
     </header>

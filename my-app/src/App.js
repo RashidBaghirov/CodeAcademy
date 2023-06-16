@@ -14,6 +14,7 @@ import Profession from './Pages/Profession';
 import ProfessionDetail from './Pages/ProfessionDetail';
 import Teaacher from './Pages/Teaacher';
 import Practice from './Pages/Practice';
+import Results from './Pages/Results';
 
 
 function App() {
@@ -36,6 +37,10 @@ function App() {
   <Route path="/professiondetail/:id" element={<ProfessionDetail />} />
   <Route path="/teacher/:id" element={<Teaacher />} />
   <Route path="/practice/:id" element={<Practice />} />
+  <Route path="/practice/:id" element={<Practice />} />
+  <Route path="/result" element={<Results />} />
+
+
 
 
 

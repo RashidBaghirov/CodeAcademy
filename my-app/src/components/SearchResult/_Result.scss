@@ -1,0 +1,102 @@
+#result{
+    padding: 50px;
+
+    .titles {
+        .first {
+            display: flex;
+            justify-content: start;
+
+            h2 {
+                font-size: 60px;
+                font-weight: 100;
+                text-transform: lowercase;
+                line-height: 50px;
+                text-align: start;
+
+            }
+        }
+
+        .second {
+            display: flex;
+            justify-content: start;
+
+            h2 {
+                font-size: 60px;
+                font-weight: 800;
+                text-transform: lowercase;
+                line-height: 50px;
+                text-align: start;
+
+            }
+        }
+
+    }
+
+    .border_edu {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 21px 0 21px 50px;
+        .line {
+            height: 4px;
+            width: 125px;
+            background-image: url(https://code.edu.az/wp-content/uploads/2021/07/sep-line.png);
+        }
+    }
+}
+#search_result{
+    padding: 50px;
+    .searchcart{
+        margin-top: 40px;
+        border: 1px solid black;
+        padding: 20px;
+        .name{
+            span{
+                font-family: "Visby CF", Sans-serif !important;
+    
+            }
+        }
+        .title{
+            margin-top: 20px;
+            h2{
+                font-family: "Visby CF", Sans-serif !important;
+                font-size: 1.5em;
+                font-weight: 800;
+            }
+        }
+        .text{
+            margin-top: 20px;
+            p{
+                font-family: "Visby CF", Sans-serif !important;
+            }
+        }
+        .button{
+            a{
+                margin-top: 20px;
+                width: 138px;
+                height: 60px;
+                background-color: #872891;
+                border-color: #872891;
+                text-align: center;
+                transition: .5s;
+                padding-top: 17px;
+                color: white;
+                font-family: "Visby CF", Sans-serif !important;
+                display: inline-block;
+                text-decoration: none;
+                &:hover{
+                    background-color: #818a91;
+                    color: #4a4a4a;
+                }
+            }
+        }
+        .dayelse{
+            margin-top: 20px;
+            span{
+                font-family: "Visby CF", Sans-serif !important;
+    
+            }
+        }
+    }
+    
+}
