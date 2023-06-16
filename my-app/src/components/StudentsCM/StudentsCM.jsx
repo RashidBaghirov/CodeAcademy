@@ -3,6 +3,7 @@ import "./_StudentsCM.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 const StudentsCM = () => {
 
@@ -38,17 +39,22 @@ const StudentsCM = () => {
           </div>
           <Slider {...settings}>
                 {graduantData.map((data) => (
-               <div className="m-4">
+               <div className="p-3">
                <div className="studentsCM-students-text d-flex justify-content-center">
                  {data.sentence}
                </div>
                <div className="stu_name_and_img">
                  <div className="image">
-                   <img src={data.image} alt={data.name} />
+                 <Link   style={{textDecoration:"none"}}  to={`/graduantabout/${data.id}`}>
+                  <img src={data.image} alt={data.name} />
+                  </Link>
                  </div>
                  <div className="name_and_profession">
                    <span className="name">
+                   <Link style={{textDecoration:"none",color:"black"}}  to={`/graduantabout/${data.id}`}>
                      {data.name} {data.surName}
+                  </Link>
+
                    </span>
                    <span className="profession">{data.position}</span>
                  </div>

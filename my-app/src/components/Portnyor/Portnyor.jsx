@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from 'react';
 import "./_Portnyor.scss";
 
 function Portnyor() {
+  const [partnyorData, setpartnyorData] = useState([]);
+
+  useEffect(() => {
+    fetch('https://localhost:7140/partnyor')
+      .then(response => response.json())
+      .then(data => {
+        setpartnyorData(data);
+      })
+      .catch(error => {
+        console.error('API request error:', error);
+      });
+  }, []);
   return (
     <section id="portnyor">
       <div className="mt-5">
@@ -34,49 +46,15 @@ function Portnyor() {
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-lg-2 mt-5">
-              <div className="portnyor">
-                <div className="portnyor_image">
-                  <img src="/images/pt1.png" />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-2 mt-5">
-              <div className="portnyor">
-                <div className="portnyor_image">
-                  <img src="/images/pt2.png" />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-2 mt-5">
-              <div className="portnyor">
-                <div className="portnyor_image">
-                  <img src="/images/pt3.jpeg" />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-2 mt-5">
-              <div className="portnyor">
-                <div className="portnyor_image">
-                  <img src="/images/pt4.png" />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-2 mt-5">
-              <div className="portnyor">
-                <div className="portnyor_image">
-                  <img src="/images/pt5.jpg" />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-2 mt-5">
-              <div className="portnyor">
-                <div className="portnyor_image">
-                  <img src="/images/pt6.png" />
-                </div>
-              </div>
-            </div>
-            
+          {partnyorData.map((data)=>(
+               <div className="col-lg-2 mt-5">
+               <div className="portnyor">
+                 <div className="portnyor_image">
+                   <img src={data.image} />
+                 </div>
+               </div>
+             </div>
+        ))}
           </div>
         </div>
       </div>

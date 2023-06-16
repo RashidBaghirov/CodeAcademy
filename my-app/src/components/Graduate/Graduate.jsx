@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import "./_Graduate.scss";
+import { Link } from "react-router-dom";
 
 function Graduate() {
   const [graduantData, setgraduantData] = useState([]);
@@ -48,19 +49,24 @@ function Graduate() {
         <div className="container">
           <div className="row m-0 p-0">
             {graduantData.map((data) => (
-            <div className="col-lg-2 mt-5">
-            <div className="graduates">
-              <div className="graduates_image">
-                <img src={data.image} />
-                <div className="abouts">
-                <div className="grd_bg">
-                <p>{data.name}</p>
-                <p>{data.position}</p>
-                </div>
+              <div className="col-lg-2 mt-5">
+                <div className="graduates">
+                  <div className="graduates_image">
+                    <img src={data.image} />
+                    <div className="abouts">
+                      <div className="grd_bg">
+                        <Link
+                          style={{ textDecoration: "none" }}
+                          to={`/graduantabout/${data.id}`}
+                        >
+                          <p>{data.name}</p>
+                          <p>{data.position}</p>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
             ))}
           </div>
         </div>

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 function Third() {
   const { id } = useParams();
   const [modeDetail, setModeDetail] = useState(null);
+  const [filterValue, setFilterValue] = useState("Hamısı"); // Varsayılan filtre değeri
 
   useEffect(() => {
     axios
@@ -18,10 +19,19 @@ function Third() {
       });
   }, [id]);
 
+  const handleFilterChange = (e) => {
+    setFilterValue(e.target.value);
+  };
+
   if (!modeDetail) {
     return <div>Loading...</div>;
   }
 
+  const filteredProfessions = filterValue === "Hamısı"
+    ? modeDetail.professions 
+    : modeDetail.professions.filter(
+        (data) => data.category.name === filterValue
+      );
 
   return (
     <section id="education">
@@ -31,21 +41,42 @@ function Third() {
             <h1>Proqramlaşdırma Tədris Proqramları</h1>
           </div>
           <form action="">
-            <input type="radio" id="Hamısı" name="type_edu" />
+            <input
+              type="radio"
+              id="Hamısı"
+              name="type_edu"
+              value="Hamısı"
+              checked={filterValue === "Hamısı"}
+              onChange={handleFilterChange}
+            />
             <label htmlFor="Hamısı">Hamısı</label>
 
-            <input type="radio" id="Korporativ" name="type_edu" />
+            <input
+              type="radio"
+              id="Korporativ"
+              name="type_edu"
+              value="Korporativ"
+              checked={filterValue === "Korporativ"}
+              onChange={handleFilterChange}
+            />
             <label htmlFor="Korporativ">Korporativ</label>
 
-            <input type="radio" id="ferdi" name="type_edu" />
+            <input
+              type="radio"
+              id="ferdi"
+              name="type_edu"
+              value="Fərdi"
+              checked={filterValue === "Fərdi"}
+              onChange={handleFilterChange}
+            />
             <label htmlFor="ferdi">Fərdi</label>
           </form>
 
-          {modeDetail && modeDetail.professions.map((data) => (
+          {filteredProfessions.map((data) => (
             <div className="col-lg-12" key={data.id}>
               <div className="cart">
                 <div className="name">
-                  {/* <span>{modeDetail.category.name}</span> */}
+                  <span>{data.category.name}</span>
                 </div>
                 <div className="title">
                   <h2>{data.name}​</h2>

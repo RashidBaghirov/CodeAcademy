@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 function Cart_Cource({date,courcename,courseday}){
     return(
@@ -18,9 +18,9 @@ function Cart_Cource({date,courcename,courseday}){
             </div>
         </div>
         <div className="buttonMur">
-            <a href="">
+            <Link style={{textDecoration:"none"}} to="/request">
                 Müraciət et
-            </a>
+            </Link>
         </div>
     </div>
     );

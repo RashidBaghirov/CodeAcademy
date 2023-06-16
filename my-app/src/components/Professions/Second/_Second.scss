@@ -21,29 +21,6 @@
 
             }
         }
-        .button{
-            a{
-                position: absolute;
-    bottom: 20px;
-                margin-top: 75px;
-                width: 138px;
-                height: 60px;
-                background-color: #2382C8;
-                border-color: #2382C8;
-                text-align: center;
-                transition: .5s;
-                padding-top: 17px;
-                color: white;
-                font-family: "Visby CF", Sans-serif !important;
-                display: inline-block;
-                text-decoration: none;
-                &:hover{
-                    background-color: #818a91;
-                    color: #4a4a4a;
-                }
-            }
-          
-        }
     
     }
 }

@@ -9,9 +9,6 @@ function TypeOfEducation({ title, text }) {
       <div className="text">
         <p>{text}</p>
       </div>
-      <div className="button">
-        <a href="">Ətraflı</a>
-      </div>
     </div>
   );
 }
