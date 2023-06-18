@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 import "./_Result.scss";
 import { Link } from "react-router-dom";
 
+
+
 function Result() {
   const [searchResults, setSearchResults] = useState([]);
   const location = useLocation();

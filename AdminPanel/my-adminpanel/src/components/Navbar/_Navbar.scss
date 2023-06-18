@@ -1,0 +1,31 @@
+.navbar {
+    background-color:  #7A0F9A;
+    color: #fff;
+  }
+  
+  .navbar__list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  
+  .navbar__item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .navbar__item:hover {
+    color:#00AA49;
+  }
+  
+  .navbar__item.active {
+    color:#00AA49;
+  }
+  
+  .navbar__link {
+    text-decoration: none;
+    color: inherit;
+  }
+  

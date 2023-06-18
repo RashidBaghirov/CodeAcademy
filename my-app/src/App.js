@@ -16,10 +16,9 @@ import Teaacher from './Pages/Teaacher';
 import Practice from './Pages/Practice';
 import Results from './Pages/Results';
 
-
 function App() {
   return (
-    <div className="App">
+        <div className="App">
    
    <Router>
 <Routes>

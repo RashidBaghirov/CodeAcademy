@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./_Third.scss"
 
 function Third(){
@@ -57,7 +57,9 @@ function Third(){
                             </p>
                         </div>
                         <div className="navDesighn">
+                        <Link style={{ textDecoration: "none" }} to={`/profession/${graduantDetail.educationMode.id}`}>
                             <p>   {graduantDetail.educationMode.hastage} <span></span></p>
+                            </Link>
                         </div>
                     </div>
                 </div>
