@@ -16,7 +16,6 @@ function Register() {
     password: "",
     confirmPassword: "",
     checkbox: true,
-    role: "2",
   });
 
   const handleChange = (e) => {
@@ -43,7 +42,7 @@ function Register() {
       toast.success("Successfully Registered. Please check your email.");
 
       setTimeout(() => {
-        navigate("/");
+        navigate("/home");
         window.open("https://mail.google.com/", "_blank");
       }, 4000);
     } catch (error) {

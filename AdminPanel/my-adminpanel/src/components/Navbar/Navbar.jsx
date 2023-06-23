@@ -24,24 +24,8 @@ const Navbar = () => {
           className={`navbar__item ${activeLink === "users" ? "active" : ""}`}
           onClick={() => handleLinkClick("users")}
         >
-          <Link to="/users" className="navbar__link">
-            Users
-          </Link>
-        </li>
-        <li
-          className={`navbar__item ${activeLink === "products" ? "active" : ""}`}
-          onClick={() => handleLinkClick("products")}
-        >
-          <Link to="/products" className="navbar__link">
-            Products
-          </Link>
-        </li>
-        <li
-          className={`navbar__item ${activeLink === "settings" ? "active" : ""}`}
-          onClick={() => handleLinkClick("settings")}
-        >
-          <Link to="/settings" className="navbar__link">
-            Settings
+          <Link to="/register" className="navbar__link">
+            Register New Admin
           </Link>
         </li>
       </ul>

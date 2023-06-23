@@ -35,11 +35,11 @@ function Login() {
       );
       const token = response.data;
       localStorage.setItem("token", token);
-
+        
       toast.success("Successfully logged in.");
       setTimeout(() => {
         navigate("/home");
-      }, 4000);
+      }, 2000);
     } catch (error) {
       console.error(error);
         toast.error("Login failed. Please try again.");

@@ -13,6 +13,7 @@ function App() {
   <Route path="/register" element={<Register />} />
   <Route path="/home" element={<Home />} />
   <Route path="/request" element={<Requests />} />
+
 </Routes>
 </Router>
     </div>
