@@ -33,9 +33,9 @@ function Login() {
         formData,
         config
       );
-      const token = response.data;
-      localStorage.setItem("token", token);
-        
+const token = response.data;
+localStorage.setItem("token", JSON.stringify(token));
+console.log(token);
       toast.success("Successfully logged in.");
       setTimeout(() => {
         navigate("/home");

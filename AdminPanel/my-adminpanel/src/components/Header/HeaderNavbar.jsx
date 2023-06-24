@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Modal from 'react-modal';
+import { useNavigate } from "react-router-dom";
+import jwt_decode from "jwt-decode";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './_HeaderNavbar.scss';
-
+import { Link } from 'react-router-dom';
 const HeaderNavbar = () => {
+  const navigate = useNavigate();
   const [refdata, setRefdata] = useState([]);
   const [showMessages, setShowMessages] = useState(false);
   const [showLogout, setShowLogout] = useState(false);
@@ -13,11 +16,21 @@ const HeaderNavbar = () => {
   const [selectedRequest, setSelectedRequest] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [replaceText, setReplaceText] = useState('');
-
+  const [username, setUsername] = useState('');
   const handleAdminClick = () => {
     setShowMessages(false);
     setShowLogout(!showLogout);
   };
+
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    const decodedToken = jwt_decode(token);
+    const username = decodedToken.email;
+    
+    setUsername(username);
+  }, []);
+  
 
   useEffect(() => {
     axios
@@ -36,7 +49,20 @@ const HeaderNavbar = () => {
   }, [refdata]);
 
   const handleLogoutClick = () => {
-    // Logout işlemleri burada yapılabilir
+    const url='https://localhost:7140/logout'
+    axios.
+    post(url)
+    .then((response)=>{
+      toast.success('Logout  successfully');
+      setTimeout(() => {
+        navigate("/");
+        localStorage.removeItem("token");
+      }, 2000);
+    })
+    .catch((error) => {
+      console.error('Logout  error:', error);
+      toast.error('Error logout request');
+    });
   };
 
   const handleModalClose = () => {
@@ -114,14 +140,17 @@ const HeaderNavbar = () => {
           <div className="col-lg-3">
             <div className="header__left">
               <div className="header__logo">
+                <Link to="/home">
                 <img src="/images/logofoot.png" alt="Logo" />
+                
+                </Link>
               </div>
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="header__center">
-              <div className="header__search">
-                <input className="w-100" type="text" placeholder="Search" />
+            <div className="header__center d-none">
+              <div className="header__search d-none">
+                <input className="w-100" type="hidden" placeholder="Search" />
                 <button className="header__search-button">
                   <i className="fa fa-search"></i>
                 </button>
@@ -143,7 +172,7 @@ const HeaderNavbar = () => {
                 )}
               </span>
               <span className="header__admin-name" onClick={handleAdminClick}>
-                John Doe
+              {username}
               </span>
               {showLogout && (
                 <div className="header__logout">

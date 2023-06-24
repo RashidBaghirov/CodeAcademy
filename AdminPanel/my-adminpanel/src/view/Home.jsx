@@ -1,30 +1,21 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import HeaderNavbar from "../components/Header/HeaderNavbar";
 import Navbar from "../components/Navbar/Navbar";
 
 function Home() {
-  const userRoles = ["Admin", "Superadmin"];
-  
-  const checkUserRole = () => {
-    const userRole = "Admin"; 
+  const token = localStorage.getItem("token");
+  const navigate = useNavigate();
 
-    if (userRoles.includes(userRole)) {
-      return true;
-    } else {
-      return false; 
-    }
-  };
+  if (!token) {
+    navigate("/");
+    return null; 
+  }
 
-  const isAuthorized = checkUserRole();
-console.log(isAuthorized)
   return (
     <>
-      {isAuthorized && (
-        <>
-          <HeaderNavbar />
-          <Navbar />
-        </>
-      )}
+      <HeaderNavbar />
+      <Navbar />
     </>
   );
 }
